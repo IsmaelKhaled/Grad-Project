@@ -1,0 +1,471 @@
+fileFormatVersion: 2
+guid: 6782b9f8d6cf5924a895f7f929879ae3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Door1_Frame
+    100004: Door1_Frame.001
+    100006: Door1_Hand
+    100008: Door1_Hand.001
+    100010: Door1_Left
+    100012: Door1_Left.001
+    100014: Door1_Lock
+    100016: Door1_Lock.001
+    100018: Door1_Right
+    100020: Door1_Right.001
+    100022: Door2_Frame
+    100024: Door2_Hand
+    100026: Door2_Left
+    100028: Door2_Lock
+    100030: Door2_Right
+    100032: Door3_Frame
+    100034: Door3_Hand
+    100036: Door3_Left
+    100038: Door3_Lock
+    100040: Door4_Frame
+    100042: Door4_Hand
+    100044: Door4_Left
+    100046: Door4_Lock
+    100048: //RootNode
+    100050: Door5_Frame
+    100052: Door5_Hand
+    100054: Door5_Lock
+    100056: Door5_Right
+    100058: Floor
+    100060: LEAVES
+    100062: LEAVES.001
+    100064: LEAVES.002
+    100066: LightSet
+    100068: LightSet.001
+    100070: LightSet.002
+    100072: LightSet.003
+    100074: LightSet.004
+    100076: Name_Board
+    100078: Name_Board.001
+    100080: Name_Board.002
+    100082: Name_Board.003
+    100084: Name_Board.004
+    100086: POT
+    100088: POT.001
+    100090: POT.002
+    100092: RoadEnd
+    100094: Roof
+    100096: SOIL
+    100098: SOIL.001
+    100100: SOIL.002
+    100102: Trash
+    100104: Trash Cover
+    100106: Trash Cover.001
+    100108: Trash Cover.002
+    100110: Trash Cover.003
+    100112: Trash Cover.004
+    100114: Trash.001
+    100116: Trash.002
+    100118: Trash.003
+    100120: Trash.004
+    100122: Wall
+    100124: Wall2
+    100126: Window1_Frame
+    100128: Window1_Left
+    100130: Window1_Right
+    100132: Window2_Frame
+    100134: Window2_Left
+    100136: Window2_Right
+    100138: Window3_Background
+    100140: Window3_Frame
+    100142: Window3_Moving
+    400000: Camera
+    400002: Door1_Frame
+    400004: Door1_Frame.001
+    400006: Door1_Hand
+    400008: Door1_Hand.001
+    400010: Door1_Left
+    400012: Door1_Left.001
+    400014: Door1_Lock
+    400016: Door1_Lock.001
+    400018: Door1_Right
+    400020: Door1_Right.001
+    400022: Door2_Frame
+    400024: Door2_Hand
+    400026: Door2_Left
+    400028: Door2_Lock
+    400030: Door2_Right
+    400032: Door3_Frame
+    400034: Door3_Hand
+    400036: Door3_Left
+    400038: Door3_Lock
+    400040: Door4_Frame
+    400042: Door4_Hand
+    400044: Door4_Left
+    400046: Door4_Lock
+    400048: //RootNode
+    400050: Door5_Frame
+    400052: Door5_Hand
+    400054: Door5_Lock
+    400056: Door5_Right
+    400058: Floor
+    400060: LEAVES
+    400062: LEAVES.001
+    400064: LEAVES.002
+    400066: LightSet
+    400068: LightSet.001
+    400070: LightSet.002
+    400072: LightSet.003
+    400074: LightSet.004
+    400076: Name_Board
+    400078: Name_Board.001
+    400080: Name_Board.002
+    400082: Name_Board.003
+    400084: Name_Board.004
+    400086: POT
+    400088: POT.001
+    400090: POT.002
+    400092: RoadEnd
+    400094: Roof
+    400096: SOIL
+    400098: SOIL.001
+    400100: SOIL.002
+    400102: Trash
+    400104: Trash Cover
+    400106: Trash Cover.001
+    400108: Trash Cover.002
+    400110: Trash Cover.003
+    400112: Trash Cover.004
+    400114: Trash.001
+    400116: Trash.002
+    400118: Trash.003
+    400120: Trash.004
+    400122: Wall
+    400124: Wall2
+    400126: Window1_Frame
+    400128: Window1_Left
+    400130: Window1_Right
+    400132: Window2_Frame
+    400134: Window2_Left
+    400136: Window2_Right
+    400138: Window3_Background
+    400140: Window3_Frame
+    400142: Window3_Moving
+    2000000: Camera
+    2100000: No Name
+    2100002: Windowwood
+    2100004: DH_Gold
+    2100006: wire_135059008
+    2100008: Window_MetalFrame
+    2100010: Window_Glass
+    2100012: wire_000000000
+    2100014: Window_Background
+    2100016: DH_Black Metal.001
+    2100018: DH_Gold.001
+    2100020: DH_Hand Gold.001
+    2100022: Pot
+    2100024: Mud
+    2100026: Leaves
+    2100028: Board
+    2100030: Shine
+    2100032: trash
+    2100034: Window
+    2100036: light
+    2100038: Floor
+    2100040: Light Wood.001
+    2100042: Dark wood.001
+    2100044: Wall
+    2100046: Green Marble
+    2100048: Light Wood
+    2100050: Dark wood
+    2100052: DH_Hand Gold
+    2100054: DH_Black Metal
+    2300000: Door1_Frame
+    2300002: Door1_Frame.001
+    2300004: Door1_Hand
+    2300006: Door1_Hand.001
+    2300008: Door1_Left
+    2300010: Door1_Left.001
+    2300012: Door1_Lock
+    2300014: Door1_Lock.001
+    2300016: Door1_Right
+    2300018: Door1_Right.001
+    2300020: Door2_Frame
+    2300022: Door2_Hand
+    2300024: Door2_Left
+    2300026: Door2_Lock
+    2300028: Door2_Right
+    2300030: Door3_Frame
+    2300032: Door3_Hand
+    2300034: Door3_Left
+    2300036: Door3_Lock
+    2300038: Door4_Frame
+    2300040: Door4_Hand
+    2300042: Door4_Left
+    2300044: Door4_Lock
+    2300046: Door5_Frame
+    2300048: Door5_Hand
+    2300050: Door5_Lock
+    2300052: Door5_Right
+    2300054: Floor
+    2300056: LEAVES
+    2300058: LEAVES.001
+    2300060: LEAVES.002
+    2300062: LightSet
+    2300064: LightSet.001
+    2300066: LightSet.002
+    2300068: LightSet.003
+    2300070: LightSet.004
+    2300072: Name_Board
+    2300074: Name_Board.001
+    2300076: Name_Board.002
+    2300078: Name_Board.003
+    2300080: Name_Board.004
+    2300082: POT
+    2300084: POT.001
+    2300086: POT.002
+    2300088: RoadEnd
+    2300090: Roof
+    2300092: SOIL
+    2300094: SOIL.001
+    2300096: SOIL.002
+    2300098: Trash
+    2300100: Trash Cover
+    2300102: Trash Cover.001
+    2300104: Trash Cover.002
+    2300106: Trash Cover.003
+    2300108: Trash Cover.004
+    2300110: Trash.001
+    2300112: Trash.002
+    2300114: Trash.003
+    2300116: Trash.004
+    2300118: Wall
+    2300120: Wall2
+    2300122: Window1_Frame
+    2300124: Window1_Left
+    2300126: Window1_Right
+    2300128: Window2_Frame
+    2300130: Window2_Left
+    2300132: Window2_Right
+    2300134: Window3_Background
+    2300136: Window3_Frame
+    2300138: Window3_Moving
+    3300000: Door1_Frame
+    3300002: Door1_Frame.001
+    3300004: Door1_Hand
+    3300006: Door1_Hand.001
+    3300008: Door1_Left
+    3300010: Door1_Left.001
+    3300012: Door1_Lock
+    3300014: Door1_Lock.001
+    3300016: Door1_Right
+    3300018: Door1_Right.001
+    3300020: Door2_Frame
+    3300022: Door2_Hand
+    3300024: Door2_Left
+    3300026: Door2_Lock
+    3300028: Door2_Right
+    3300030: Door3_Frame
+    3300032: Door3_Hand
+    3300034: Door3_Left
+    3300036: Door3_Lock
+    3300038: Door4_Frame
+    3300040: Door4_Hand
+    3300042: Door4_Left
+    3300044: Door4_Lock
+    3300046: Door5_Frame
+    3300048: Door5_Hand
+    3300050: Door5_Lock
+    3300052: Door5_Right
+    3300054: Floor
+    3300056: LEAVES
+    3300058: LEAVES.001
+    3300060: LEAVES.002
+    3300062: LightSet
+    3300064: LightSet.001
+    3300066: LightSet.002
+    3300068: LightSet.003
+    3300070: LightSet.004
+    3300072: Name_Board
+    3300074: Name_Board.001
+    3300076: Name_Board.002
+    3300078: Name_Board.003
+    3300080: Name_Board.004
+    3300082: POT
+    3300084: POT.001
+    3300086: POT.002
+    3300088: RoadEnd
+    3300090: Roof
+    3300092: SOIL
+    3300094: SOIL.001
+    3300096: SOIL.002
+    3300098: Trash
+    3300100: Trash Cover
+    3300102: Trash Cover.001
+    3300104: Trash Cover.002
+    3300106: Trash Cover.003
+    3300108: Trash Cover.004
+    3300110: Trash.001
+    3300112: Trash.002
+    3300114: Trash.003
+    3300116: Trash.004
+    3300118: Wall
+    3300120: Wall2
+    3300122: Window1_Frame
+    3300124: Window1_Left
+    3300126: Window1_Right
+    3300128: Window2_Frame
+    3300130: Window2_Left
+    3300132: Window2_Right
+    3300134: Window3_Background
+    3300136: Window3_Frame
+    3300138: Window3_Moving
+    4300000: Roof
+    4300002: Window3_Moving
+    4300004: Window3_Frame
+    4300006: Window3_Background
+    4300008: Window2_Left
+    4300010: Window2_Right
+    4300012: Window2_Frame
+    4300014: Window1_Right
+    4300016: Window1_Left
+    4300018: Window1_Frame
+    4300020: Door5_Lock
+    4300022: Door5_Hand
+    4300024: POT.002
+    4300026: SOIL.002
+    4300028: LEAVES.002
+    4300030: LEAVES.001
+    4300032: SOIL.001
+    4300034: POT.001
+    4300036: POT
+    4300038: SOIL
+    4300040: LEAVES
+    4300042: Name_Board.004
+    4300044: Name_Board.003
+    4300046: Name_Board.002
+    4300048: Name_Board.001
+    4300050: Trash.004
+    4300052: Trash Cover.004
+    4300054: Trash Cover.003
+    4300056: Trash.003
+    4300058: Trash.002
+    4300060: Trash Cover.002
+    4300062: Trash Cover.001
+    4300064: Trash.001
+    4300066: LightSet
+    4300068: LightSet.004
+    4300070: LightSet.003
+    4300072: LightSet.001
+    4300074: LightSet.002
+    4300076: RoadEnd
+    4300078: Door1_Right.001
+    4300080: Door1_Lock.001
+    4300082: Door1_Left.001
+    4300084: Door1_Hand.001
+    4300086: Door1_Frame.001
+    4300088: Floor
+    4300090: Wall2
+    4300092: Wall
+    4300094: Door3_Frame
+    4300096: Door3_Hand
+    4300098: Door3_Left
+    4300100: Door3_Lock
+    4300102: Door1_Frame
+    4300104: Door1_Hand
+    4300106: Door1_Left
+    4300108: Door1_Lock
+    4300110: Door1_Right
+    4300112: Door2_Frame
+    4300114: Door2_Hand
+    4300116: Door2_Left
+    4300118: Door2_Lock
+    4300120: Door2_Right
+    4300122: Door4_Frame
+    4300124: Door4_Hand
+    4300126: Door4_Left
+    4300128: Door4_Lock
+    4300130: Door5_Frame
+    4300132: Door5_Right
+    4300134: Trash
+    4300136: Trash Cover
+    4300138: Name_Board
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
