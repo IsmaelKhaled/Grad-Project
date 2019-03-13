@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114503787648731814}
   - component: {fileID: 58922702498087586}
   m_Layer: 9
-  m_Name: Output Location
+  m_Name: Output Node
   m_TagString: Output Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 114610794788584438}
   - component: {fileID: 58864481747433518}
   m_Layer: 9
-  m_Name: Bottom Input Location
+  m_Name: Bottom Input Node
   m_TagString: Input Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 114319139571842384}
   - component: {fileID: 58514427237668780}
   m_Layer: 9
-  m_Name: Top Input Location
+  m_Name: Top Input Node
   m_TagString: Input Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,6 +224,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 0}
   Line: {fileID: 1331563497267192, guid: 5e9eade5cd08a274d8ad57974207bd50, type: 2}
+  lineValue: 0
+  startNode: {fileID: 0}
+  endNode: {fileID: 0}
 --- !u!114 &114503787648731814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -259,6 +262,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 0}
   Line: {fileID: 1331563497267192, guid: 5e9eade5cd08a274d8ad57974207bd50, type: 2}
+  lineValue: 0
+  startNode: {fileID: 0}
+  endNode: {fileID: 0}
 --- !u!114 &114944687982007638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -272,6 +278,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 0}
   Line: {fileID: 1331563497267192, guid: 5e9eade5cd08a274d8ad57974207bd50, type: 2}
+  lineValue: 0
+  startNode: {fileID: 0}
+  endNode: {fileID: 0}
 --- !u!212 &212397427533836204
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class AND_Logic : MonoBehaviour {
 
-	public int topInput;
-	public int botInput;
-	public int output;
+	public bool topInput;
+	public bool botInput;
+	public bool output;
 	public bool isActive;
 	// Use this for initialization
 	void Start () {
@@ -15,16 +15,26 @@ public class AND_Logic : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(isActive){
-			if(topInput == 1 && botInput == 1)
-			{	
-				output = 1;
-			}
-			else
-			{
-				output = 0;
-			}
-		
+		//if(isActive)
+        foreach (Transform child in transform)
+        {
+            if (child.name == "Top Input Node")
+                topInput = child.GetComponent<ConnectionControl>().lineValue;
+            else if(child.name == "Bottom Input Node")
+                botInput = child.GetComponent<ConnectionControl>().lineValue;               
+        }
+
+
+		if(topInput == true && botInput == true)
+		{	
+			output = true;
 		}
+		else
+		{
+			output = false;
+		}
+
+        transform.Find("Output Node").GetComponent<ConnectionControl>().lineValue = output;
+
 	}
 }
