@@ -35,6 +35,7 @@ public class LogicInteractable : MonoBehaviour {
 
                 press = true;
                 firstClick = gameObject;
+                firstClick.GetComponent<SpriteRenderer>().material.color = Color.blue;
                 Debug.Log("Wow you just clicked once");
             }
             else if (press && ((gameObject.tag == "Input Node" && !occupied) ||
@@ -49,10 +50,12 @@ public class LogicInteractable : MonoBehaviour {
                         firstClick.GetComponent<LogicInteractable>().occupied = true;
                     else if(secondClick.tag == "Input Node")
                         secondClick.GetComponent<LogicInteractable>().occupied = true;
+
+
                 }
                 
                 Debug.Log("Wow you just clicked a second time");
-                
+                firstClick.GetComponent<SpriteRenderer>().material.color = origColor;
             }
         }
     

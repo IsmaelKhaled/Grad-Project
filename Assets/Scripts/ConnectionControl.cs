@@ -53,7 +53,7 @@ public class ConnectionControl : MonoBehaviour {
 
 
         //break line into 3 segments if certain conditions are met (Condition currently not active, it auto breaks lines into segments.)
-        if (startPosition.x < endPosition.x)
+        if (startPosition.x < endPosition.x || (startPosition.x > endPosition.x && startObject.tag == "Input Node"))
         {
             Vector2 tempEnd1 = new Vector2(Random.Range(startPosition.x + offset.x / 6.0f,startPosition.x + offset.x / 2.0f), startPosition.y);
             Vector2 tempEnd2 = new Vector2(tempEnd1.x, endPosition.y);
