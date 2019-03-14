@@ -7,16 +7,18 @@ public class AND_Logic : MonoBehaviour {
 	public bool topInput;
 	public bool botInput;
 	public bool output;
-	public bool isActive;
-	// Use this for initialization
+
+
 	void Start () {
-		isActive = false;
 	}
 	
-	// Update is called once per frame
 	void Update () {
-		//if(isActive)
-        foreach (Transform child in transform)
+
+        /*The following part is responsible for actually enforcing the AND gate logic on the object itself
+         * by reading the 2 input nodes lineValues and ANDing them together,
+         * then outputting the result on the lineValue of the output node.
+         */
+        foreach (Transform child in transform) //loop over the children of the gate object (the nodes whether input or output) and find the input nodes
         {
             if (child.name == "Top Input Node")
                 topInput = child.GetComponent<ConnectionControl>().lineValue;
