@@ -9,6 +9,7 @@ public class LogicInteractable : MonoBehaviour {
     static GameObject firstClick;
     static GameObject secondClick;
     bool occupied = false;
+    bool togColor = true;
     Color origColor;
 	
     void Start()
@@ -35,7 +36,7 @@ public class LogicInteractable : MonoBehaviour {
 
                 press = true;
                 firstClick = gameObject;
-                firstClick.GetComponent<SpriteRenderer>().material.color = Color.blue;
+                togColor = false;
                 Debug.Log("Wow you just clicked once");
             }
             else if (press && ((gameObject.tag == "Input Node" && !occupied) ||
@@ -50,18 +51,18 @@ public class LogicInteractable : MonoBehaviour {
                         firstClick.GetComponent<LogicInteractable>().occupied = true;
                     else if(secondClick.tag == "Input Node")
                         secondClick.GetComponent<LogicInteractable>().occupied = true;
-
-
+                    firstClick.GetComponent<SpriteRenderer>().color = origColor;
+                    firstClick.GetComponent<LogicInteractable>().togColor = true;
                 }
                 
                 Debug.Log("Wow you just clicked a second time");
-                firstClick.GetComponent<SpriteRenderer>().material.color = origColor;
             }
         }
     
     }
     void OnMouseExit()
         {
-            gameObject.GetComponent<SpriteRenderer>().color = origColor;
+            if(togColor)
+                gameObject.GetComponent<SpriteRenderer>().color = origColor;
         }
 }
