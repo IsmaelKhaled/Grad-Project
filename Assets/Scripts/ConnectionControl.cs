@@ -35,9 +35,9 @@ public class ConnectionControl : MonoBehaviour {
 
 	public GameObject DrawLine(GameObject startObject, GameObject endObject, Color color) // draws a line betwen the center of 2 game objects
 	{
+        Vector2 startPosition = startObject.transform.position;
 		Vector2 endPosition = endObject.transform.position;
         Vector2 offset = (endPosition - startPosition) / 2.0f;
-		Vector2 position = startPosition + offset;
 
 
 
@@ -53,7 +53,7 @@ public class ConnectionControl : MonoBehaviour {
 
 
         //break line into 3 segments if certain conditions are met (Condition currently not active, it auto breaks lines into segments.)
-        //if (Mathf.Abs(startPosition.y - endPosition.y) > 0.5 && Mathf.Abs(startPosition.x - endPosition.x) > 1)
+        if (startPosition.x < endPosition.x)
         {
             Vector2 tempEnd1 = new Vector2(Random.Range(startPosition.x + offset.x / 6.0f,startPosition.x + offset.x / 2.0f), startPosition.y);
             Vector2 tempEnd2 = new Vector2(tempEnd1.x, endPosition.y);
@@ -76,6 +76,46 @@ public class ConnectionControl : MonoBehaviour {
             lineProperties.segments.Add(line1);
             lineProperties.segments.Add(line2);
             lineProperties.segments.Add(line3);
+
+        }
+
+        else if(startPosition.x > endPosition.x)
+        {
+            Vector2 tempEnd1 = new Vector2(startPosition.x + Random.Range(0.5f,1.5f), startPosition.y);
+            Vector2 tempEnd2;
+            if(startPosition.y > endPosition.y)
+                tempEnd2 = new Vector2(tempEnd1.x, startPosition.y - (startPosition.y - endPosition.y) / Random.Range(2f, 4f));
+            else
+                tempEnd2 = new Vector2(tempEnd1.x, startPosition.y+(endPosition.y-startPosition.y)/Random.Range(2f,4f));
+            Vector2 tempEnd3 = new Vector2(endPosition.x - Random.Range(0.5f, 1.5f), tempEnd2.y);
+            Vector2 tempEnd4 = new Vector2(tempEnd3.x, endPosition.y);
+
+
+            color = Color.blue; //just a default value, will be automatically modified in Update to red/green based on true/false
+
+            GameObject line1 = DrawLine(startPosition, tempEnd1, color);
+            GameObject line2 = DrawLine(tempEnd1, tempEnd2, color);
+            GameObject line3 = DrawLine(tempEnd2, tempEnd3, color);
+            GameObject line4 = DrawLine(tempEnd3, tempEnd4, color);
+            GameObject line5 = DrawLine(tempEnd4, endPosition, color);
+
+            line1.transform.SetParent(line);
+            line2.transform.SetParent(line);
+            line3.transform.SetParent(line);
+            line4.transform.SetParent(line);
+            line5.transform.SetParent(line);
+
+            line1.GetComponent<ConnectionControl>().enabled = false;
+            line2.GetComponent<ConnectionControl>().enabled = false;
+            line3.GetComponent<ConnectionControl>().enabled = false;
+            line4.GetComponent<ConnectionControl>().enabled = false;
+            line5.GetComponent<ConnectionControl>().enabled = false;
+
+            lineProperties.segments.Add(line1);
+            lineProperties.segments.Add(line2);
+            lineProperties.segments.Add(line3);
+            lineProperties.segments.Add(line4);
+            lineProperties.segments.Add(line5);
 
 
         }
