@@ -35,7 +35,6 @@ public class ConnectionControl : MonoBehaviour {
 
 	public GameObject DrawLine(GameObject startObject, GameObject endObject, Color color) // draws a line betwen the center of 2 game objects
 	{
-		Vector2 startPosition = startObject.transform.position;
 		Vector2 endPosition = endObject.transform.position;
         Vector2 offset = (endPosition - startPosition) / 2.0f;
 		Vector2 position = startPosition + offset;

@@ -8,6 +8,7 @@ public class LogicInteractable : MonoBehaviour {
     static bool draw = false;
     static GameObject firstClick;
     static GameObject secondClick;
+    bool occupied = false;
     Color origColor;
 	
     void Start()
@@ -20,7 +21,6 @@ public class LogicInteractable : MonoBehaviour {
         {
             gameObject.GetComponent<ConnectionControl>().DrawLine(firstClick, secondClick, Color.red);
             draw = false;
-
         }
 
     }
@@ -29,19 +29,28 @@ public class LogicInteractable : MonoBehaviour {
             gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
         if (Input.GetMouseButtonDown(0))
         {
-            if(!press && (gameObject.tag == "Input Node" ||
+            if(!press && ((gameObject.tag == "Input Node" && !occupied) ||
                             gameObject.tag == "Output Node"))
             {
+
                 press = true;
                 firstClick = gameObject;
                 Debug.Log("Wow you just clicked once");
             }
-            else if (press && (gameObject.tag == "Input Node" ||
+            else if (press && ((gameObject.tag == "Input Node" && !occupied) ||
                             gameObject.tag == "Output Node"))
             {
                 press = false;
                 secondClick = gameObject;
-                if (firstClick != secondClick && firstClick.tag != secondClick.tag) draw = true;
+                if (firstClick != secondClick && firstClick.tag != secondClick.tag)
+                {
+                    draw = true;
+                    if (firstClick.tag == "Input Node")
+                        firstClick.GetComponent<LogicInteractable>().occupied = true;
+                    else if(secondClick.tag == "Input Node")
+                        secondClick.GetComponent<LogicInteractable>().occupied = true;
+                }
+                
                 Debug.Log("Wow you just clicked a second time");
                 
             }
