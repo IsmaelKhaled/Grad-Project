@@ -9,13 +9,16 @@ public class ConnectionControl : MonoBehaviour {
     public bool lineValue;
 
 	void Start () {
+        //initially the linevalue of a node is false, updated later in Update()
         lineValue = false;
 	}
 	
 	void Update () {
         if (transform.tag == "Line")
         {
+            //set the line lineValue to the start node lineValue
             transform.GetComponent<LineType>().lineValue = transform.GetComponent<LineType>().startNode.GetComponent<ConnectionControl>().lineValue;
+            //set the endNode lineValue to the line lineValue
             transform.GetComponent<LineType>().endNode.GetComponent<ConnectionControl>().lineValue = transform.GetComponent<LineType>().lineValue;
         }
 
@@ -79,7 +82,7 @@ public class ConnectionControl : MonoBehaviour {
 
         }
 
-        else if(startPosition.x > endPosition.x)
+        else if(startPosition.x > endPosition.x) //first click x position is higher than the second click x position
         {
             Vector2 tempEnd1 = new Vector2(startPosition.x + Random.Range(0.5f,1.5f), startPosition.y);
             Vector2 tempEnd2;
@@ -99,18 +102,21 @@ public class ConnectionControl : MonoBehaviour {
             GameObject line4 = DrawLine(tempEnd3, tempEnd4, color);
             GameObject line5 = DrawLine(tempEnd4, endPosition, color);
 
+            //set the parent line object as a parent to all the segments
             line1.transform.SetParent(line);
             line2.transform.SetParent(line);
             line3.transform.SetParent(line);
             line4.transform.SetParent(line);
             line5.transform.SetParent(line);
 
+            //set the connectioncontrol on the segment lines to inactive
             line1.GetComponent<ConnectionControl>().enabled = false;
             line2.GetComponent<ConnectionControl>().enabled = false;
             line3.GetComponent<ConnectionControl>().enabled = false;
             line4.GetComponent<ConnectionControl>().enabled = false;
             line5.GetComponent<ConnectionControl>().enabled = false;
 
+            //add all the segments to the parent line object
             lineProperties.segments.Add(line1);
             lineProperties.segments.Add(line2);
             lineProperties.segments.Add(line3);

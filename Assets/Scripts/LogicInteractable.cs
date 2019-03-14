@@ -8,7 +8,7 @@ public class LogicInteractable : MonoBehaviour {
     static bool draw = false;
     static GameObject firstClick;
     static GameObject secondClick;
-    bool occupied = false;
+    bool occupied = false; //added to fix a bug where an input node could have multiple liens connected to it
     bool togColor = true;
     Color origColor;
 	
@@ -36,21 +36,24 @@ public class LogicInteractable : MonoBehaviour {
 
                 press = true;
                 firstClick = gameObject;
-                togColor = false;
+                togColor = false; //change the color of the firstClick node to remain yellow until a second click is made
                 Debug.Log("Wow you just clicked once");
             }
             else if (press && ((gameObject.tag == "Input Node" && !occupied) ||
-                            gameObject.tag == "Output Node"))
+                            (gameObject.tag == "Output Node"&& firstClick.tag != "Output Node")))
             {
                 press = false;
                 secondClick = gameObject;
                 if (firstClick != secondClick && firstClick.tag != secondClick.tag)
                 {
                     draw = true;
+
                     if (firstClick.tag == "Input Node")
                         firstClick.GetComponent<LogicInteractable>().occupied = true;
                     else if(secondClick.tag == "Input Node")
                         secondClick.GetComponent<LogicInteractable>().occupied = true;
+
+                    //revert the firstClick node to its original color after the second click has been made
                     firstClick.GetComponent<SpriteRenderer>().color = origColor;
                     firstClick.GetComponent<LogicInteractable>().togColor = true;
                 }
@@ -62,7 +65,7 @@ public class LogicInteractable : MonoBehaviour {
     }
     void OnMouseExit()
         {
-            if(togColor)
+            if(togColor) //revert the node to its original color if the mouse exits the node and hasn't clicked inside
                 gameObject.GetComponent<SpriteRenderer>().color = origColor;
         }
 }

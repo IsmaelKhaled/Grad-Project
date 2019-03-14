@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LineType : MonoBehaviour
 {
-
+    //a class holding all the attributes associated with lines for ease of use
     public string type;
     public GameObject startNode;
     public GameObject endNode;
