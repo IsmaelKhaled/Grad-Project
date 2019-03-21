@@ -199,7 +199,6 @@ MonoBehaviour:
   topInput: 0
   botInput: 0
   output: 0
-  isActive: 0
 --- !u!114 &114319139571842384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,11 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4820b0372db554ca54ca82aab344b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 0}
-  Line: {fileID: 1331563497267192, guid: 5e9eade5cd08a274d8ad57974207bd50, type: 2}
+  linePrefab: {fileID: 1927445428656788, guid: 51f047f56628e2f4aadede14fb0d6077, type: 2}
   lineValue: 0
-  startNode: {fileID: 0}
-  endNode: {fileID: 0}
 --- !u!114 &114503787648731814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,11 +256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4820b0372db554ca54ca82aab344b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 0}
-  Line: {fileID: 1331563497267192, guid: 5e9eade5cd08a274d8ad57974207bd50, type: 2}
+  linePrefab: {fileID: 1927445428656788, guid: 51f047f56628e2f4aadede14fb0d6077, type: 2}
   lineValue: 0
-  startNode: {fileID: 0}
-  endNode: {fileID: 0}
 --- !u!114 &114944687982007638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -276,11 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d4820b0372db554ca54ca82aab344b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineRenderer: {fileID: 0}
-  Line: {fileID: 1331563497267192, guid: 5e9eade5cd08a274d8ad57974207bd50, type: 2}
+  linePrefab: {fileID: 1927445428656788, guid: 51f047f56628e2f4aadede14fb0d6077, type: 2}
   lineValue: 0
-  startNode: {fileID: 0}
-  endNode: {fileID: 0}
 --- !u!212 &212397427533836204
 SpriteRenderer:
   m_ObjectHideFlags: 1
