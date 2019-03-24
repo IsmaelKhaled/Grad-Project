@@ -56,44 +56,7 @@ public class ConnectionControl : MonoBehaviour {
         return currentLine.gameObject;
 	}
 
-
-
-    //-----------------THIS FUNCTION IS NOW USELESS AND SHOULD BE REMOVED LATER--------------------------
-
-
-    //public GameObject DrawLine(Vector2 startObject, Vector2 endObject, Color color) // draws a line between two 2D points
-    //{
-    //    Vector2 startPosition = startObject;
-    //    Vector2 endPosition = endObject;
-    //    Vector2 offset = (endPosition - startPosition) / 2.0f;
-    //    Vector2 position = startPosition + offset;
-        
-        
-
-    //    Transform line = Instantiate<GameObject>(linePrefab, Vector3.zero, Quaternion.identity).transform;
-    //    line.GetComponent<Renderer>().material.color = color;
-
-    //    line.GetComponent<LineType>().startPos = startPosition;
-    //    line.GetComponent<LineType>().endPos = endPosition;
-
-    //    //set line position to the midpoint between start and end point
-    //    line.position = position;
-    //    //set the forward vector on the line to look towards the start position (might cause issues later?)
-    //    //the lines that follow are because there was a bug if the line was vertical its Y rotation was messed up.
-    //    line.LookAt(startPosition);
-    //    Vector2 rot = line.localRotation.eulerAngles;
-    //    rot.Set(rot.x, 90);
-    //    line.localRotation = Quaternion.Euler(rot);
-
-    //    //set line scale
-    //    Vector3 currentScale = line.localScale;
-    //    currentScale.z = (endPosition - startPosition).magnitude;
-    //    line.localScale = currentScale;
-    //    return line.gameObject;
-    //}
-
-    //-------------------------------------------------------------------------
-
+    
     private void UpdateLines() //Updates line color and node/line lineValues
     {
         if (transform.tag == "Line")

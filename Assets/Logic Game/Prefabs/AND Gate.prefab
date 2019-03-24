@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 212763095843302940}
   - component: {fileID: 114045069572097998}
   m_Layer: 9
-  m_Name: AND
+  m_Name: AND Gate
   m_TagString: Logic Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

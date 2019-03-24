@@ -8,6 +8,8 @@ TagManager:
   - Output Node
   - Input Node
   - Line
+  - Input Supply
+  - Target
   layers:
   - Default
   - TransparentFX

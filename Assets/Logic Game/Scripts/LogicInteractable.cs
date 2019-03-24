@@ -12,13 +12,18 @@ public class LogicInteractable : MonoBehaviour
     bool occupied = false; //added to fix a bug where an input node could have multiple liens connected to it
     bool togColor = true;
     Color origColor;
+    public bool disabled;
 
     void Start()
     {
+        if (disabled)
+            this.enabled = false;
         origColor = gameObject.GetComponent<SpriteRenderer>().color;
     }
     void Update()
     {
+        if (disabled)
+            return;
         if (draw)
         {
             gameObject.GetComponent<ConnectionControl>().CreateLine(firstClick, secondClick);
@@ -36,18 +41,20 @@ public class LogicInteractable : MonoBehaviour
     }
     void OnMouseOver() // responsible for interacting with nodes (click on 2 nodes to draw)
     {
+        if (disabled)
+            return;
         gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
         if (Input.GetMouseButtonDown(0))
         {
             if (!press && ((gameObject.tag == "Input Node" && !occupied) ||
                             gameObject.tag == "Output Node"))
             {
-
                 press = true;
                 firstClick = gameObject;
                 togColor = false; //change the color of the firstClick node to remain yellow until a second click is made
                 Debug.Log("Wow you just clicked once");
             }
+
             else if (press && ((gameObject.tag == "Input Node" && !occupied) ||
                             (gameObject.tag == "Output Node" && firstClick.tag != "Output Node")))
             {
@@ -55,16 +62,21 @@ public class LogicInteractable : MonoBehaviour
                 secondClick = gameObject;
                 if (firstClick != secondClick && firstClick.tag != secondClick.tag)
                 {
-                    draw = true;
-
-                    if (firstClick.tag == "Input Node")
+                    if (firstClick.tag == "Input Node") //Swap the nodes if the first click was an input node (First click should always be an output node)
+                    {
                         firstClick.GetComponent<LogicInteractable>().occupied = true;
+                        GameObject temp = firstClick;
+                        firstClick = secondClick;
+                        secondClick = temp;
+                    }
                     else if (secondClick.tag == "Input Node")
                         secondClick.GetComponent<LogicInteractable>().occupied = true;
 
                     //revert the firstClick node to its original color after the second click has been made
                     firstClick.GetComponent<SpriteRenderer>().color = firstClick.GetComponent<LogicInteractable>().origColor;
                     firstClick.GetComponent<LogicInteractable>().togColor = true;
+
+                    draw = true;
                 }
 
                 Debug.Log("Wow you just clicked a second time");
@@ -74,6 +86,8 @@ public class LogicInteractable : MonoBehaviour
     }
     void OnMouseExit()
     {
+        if (disabled)
+            return;
         if (togColor) //revert the node to its original color if the mouse exits the node and hasn't clicked inside
             gameObject.GetComponent<SpriteRenderer>().color = gameObject.GetComponent<LogicInteractable>().origColor;
     }
