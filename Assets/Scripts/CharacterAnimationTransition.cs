@@ -5,82 +5,55 @@ using UnityEngine.AI;
 
 public class CharacterAnimationTransition : MonoBehaviour {
     Animator anim;
-    //CharacterController controller;
-    NavMeshAgent navMesh;    
-    float stepCycle, nextStep;
-    public float stepInterval = 2f;
-    AudioSource audioSource;
-    public AudioClip[] walkSound;
+    NavMeshAgent navMesh;
+    public bool greet = false;
+    public bool stand = true;
+    public bool typing = false;
+    public bool talking = false;
+    float speed;
     private void Start()
     {
         anim = GetComponent<Animator>();
-        //controller = GetComponent<CharacterController>();
         navMesh = GetComponent<NavMeshAgent>();
-        audioSource = GetComponent<AudioSource>();
-        stepCycle = 0f;
-        nextStep = stepCycle / 2f;
     }
     private void Update()
     {
-        anim.SetFloat("speed",navMesh.velocity.magnitude );//controller.velocity.magnitude
-        ProgressStepCycle(navMesh.velocity.magnitude);//controller.velocity.magnitude
-    }
-    void ProgressStepCycle(float speed)
-    {
-        if (navMesh.velocity.sqrMagnitude > 0) //controller.velocity.sqrMagnitude >0 && (moveDirection.x != 0 || moveDirection.y != 0)
+        
+        anim.SetFloat("speed", navMesh.velocity.magnitude);
+        if (greet)
         {
-            stepCycle += (navMesh.velocity.magnitude + (speed )) *
-                          Time.fixedDeltaTime;
+            anim.SetTrigger("greet");
+            greet = false;
         }
-
-        if (!(stepCycle > nextStep))
-        {
-            return;
-        }
-
-        nextStep = stepCycle + stepInterval;
-
-        PlayWalkSound();
+        anim.SetBool("stand", stand);
+        anim.SetBool("typing", typing);
+        anim.SetBool("talking", talking);
+        Motion();
     }
-    void PlayWalkSound()
-    {
-       /* if (!controller.isGrounded)
-        {
-            return;
-        }*/
-        int n = Random.Range(1, walkSound.Length);
-        audioSource.clip = walkSound[n];
-        audioSource.PlayOneShot(audioSource.clip);
-        walkSound[n] = walkSound[0];
-        walkSound[0] = audioSource.clip;
-    }
-    /*void Motion()
+    
+    void Motion()
     {
 
         Vector3 moveVector = Vector3.zero;
         float verticalVelocity = 0f ;
-        float gravity = 9.8f;
         float speed = 2f;
-        if (controller.isGrounded)
-        {
-            verticalVelocity = -gravity * Time.deltaTime * 0.5f;
-            
-        }
-        else
-        {
-            verticalVelocity -= gravity * Time.deltaTime;
-
-        }
         moveVector.x = Input.GetAxis("Horizontal") * speed;
         moveVector.y = verticalVelocity;
         moveVector.z = Input.GetAxis("Vertical") * speed;
-
-        controller.Move(moveVector * Time.deltaTime);
-
-        if (controller.velocity != Vector3.zero)
+        if(moveVector.x!=0 || moveVector.z != 0)
         {
-            transform.forward = new Vector3(controller.velocity.x, 0, controller.velocity.z);
-
+            stand = true;
         }
-    }*/
+         if(anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || anim.GetCurrentAnimatorStateInfo(0).IsName("Walking"))
+         {
+
+            moveVector = moveVector.normalized;
+            navMesh.SetDestination(transform.position + moveVector);
+            if (navMesh.velocity != Vector3.zero)
+            {
+                transform.forward = new Vector3(navMesh.velocity.x, 0, navMesh.velocity.z);
+
+            }
+        }
+    }
 }
