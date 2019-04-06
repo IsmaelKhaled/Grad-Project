@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Logic Gate
+  - Output Node
+  - Input Node
+  - Line
+  - Input Supply
+  - Target
   layers:
   - Default
   - TransparentFX
@@ -40,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Top
+    uniqueID: 533670151
     locked: 0
