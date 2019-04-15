@@ -13,4 +13,15 @@ public class LineType : MonoBehaviour
     public bool lineValue;
    // public List<GameObject> segments;
 
+    void OnMouseOver()
+    {
+        transform.GetComponent<LineRenderer>().material.color = Color.yellow;
+        if(Input.GetMouseButtonDown(1))
+        {
+            startNode.GetComponent<LogicInteractable>().occupied = false;
+            endNode.GetComponent<LogicInteractable>().occupied = false;
+            endNode.GetComponent<ConnectionControl>().lineValue = false;
+            Destroy(gameObject);
+        }
+    }
 }

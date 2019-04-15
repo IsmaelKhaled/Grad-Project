@@ -19,6 +19,7 @@ public class ConnectionControl : MonoBehaviour {
         Vector2 offset = (endPosition - startPosition);
         
         GameObject currentLine = Instantiate<GameObject>(linePrefab);
+        currentLine.transform.position = Vector2.zero;
         LineRenderer lr = currentLine.GetComponent<LineRenderer>();
 
         LineType lineProperties = currentLine.GetComponent<LineType>();
@@ -53,6 +54,14 @@ public class ConnectionControl : MonoBehaviour {
            
 
         }
+
+        //Create a mesh collider to be able to interact with the linerenderer for deletion
+        
+        MeshCollider mesh = currentLine.AddComponent<MeshCollider>();
+        Mesh m = new Mesh();
+        lr.BakeMesh(m, true);
+        mesh.sharedMesh = m;
+
         return currentLine.gameObject;
 	}
 

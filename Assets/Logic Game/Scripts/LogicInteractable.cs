@@ -9,7 +9,7 @@ public class LogicInteractable : MonoBehaviour
     static bool draw = false;
     static GameObject firstClick;
     static GameObject secondClick;
-    bool occupied = false; //added to fix a bug where an input node could have multiple liens connected to it
+    public bool occupied = false; //added to fix a bug where an input node could have multiple liens connected to it
     bool togColor = true;
     Color origColor;
     public bool disabled;
