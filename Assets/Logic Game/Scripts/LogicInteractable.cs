@@ -30,7 +30,7 @@ public class LogicInteractable : MonoBehaviour
             draw = false;
         }
 
-        if (press && Input.GetMouseButton(1))
+        if (press && Input.GetMouseButton(1)) //Cancel first click
         {
             press = false;
             togColor = true;

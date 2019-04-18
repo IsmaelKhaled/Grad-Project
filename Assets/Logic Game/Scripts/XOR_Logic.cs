@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class XOR_Logic : MonoBehaviour {
 
-    public bool topInput;
-    public bool botInput;
+    public Transform topInput;
+    public Transform botInput;
     public bool output;
-
+    bool isActive = false;
 
     void Start()
     {
@@ -23,15 +23,19 @@ public class XOR_Logic : MonoBehaviour {
         foreach (Transform child in transform) //loop over the children of the gate object (the nodes whether input or output) and find the input nodes
         {
             if (child.name == "Top Input Node")
-                topInput = child.GetComponent<ConnectionControl>().lineValue;
+                topInput = child;
             else if (child.name == "Bottom Input Node")
-                botInput = child.GetComponent<ConnectionControl>().lineValue;
+                botInput = child;
         }
 
+        if (topInput.GetComponent<LogicInteractable>().occupied && botInput.GetComponent<LogicInteractable>().occupied)
+            isActive = true;
 
-        output = topInput ^ botInput;
-
-        transform.Find("Output Node").GetComponent<ConnectionControl>().lineValue = output;
+        if (isActive)
+        {
+            output = topInput.GetComponent<ConnectionControl>().lineValue ^ botInput.GetComponent<ConnectionControl>().lineValue;
+            transform.Find("Output Node").GetComponent<ConnectionControl>().lineValue = output;
+        }
 
     }
 }

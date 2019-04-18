@@ -7,8 +7,8 @@ public class ConnectionControl : MonoBehaviour {
     public GameObject linePrefab;
     public bool lineValue;
     	
-	void FixedUpdate () {
-        UpdateLines();
+	void Update() {
+       UpdateLines();
 	}
    
 
@@ -62,11 +62,12 @@ public class ConnectionControl : MonoBehaviour {
         lr.BakeMesh(m, true);
         mesh.sharedMesh = m;
 
+        
         return currentLine.gameObject;
 	}
 
     
-    private void UpdateLines() //Updates line color and node/line lineValues
+    public void UpdateLines() //Updates line color and node/line lineValues
     {
         if (transform.tag == "Line")
         {

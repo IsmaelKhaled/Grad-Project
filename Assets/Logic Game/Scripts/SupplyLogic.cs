@@ -12,7 +12,10 @@ public class SupplyLogic : MonoBehaviour {
     {
         output = transform.Find("Output Node").gameObject;
         supplyText = transform.Find("Supply Text").GetComponent<TextMesh>();
-
+        lineValue = output.GetComponent<ConnectionControl>().lineValue;
+    }
+    void Update()
+    {
         lineValue = output.GetComponent<ConnectionControl>().lineValue;
         supplyText.color = lineValue ? Color.green : Color.red;
     }
