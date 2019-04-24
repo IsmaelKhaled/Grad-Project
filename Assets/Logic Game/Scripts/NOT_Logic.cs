@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class NOT_Logic : MonoBehaviour {
 
-    public bool input;
+    public Transform input;
     public bool output;
+    bool isActive = false;
 
     void Update()
     {
@@ -13,15 +14,15 @@ public class NOT_Logic : MonoBehaviour {
         /*The following part is responsible for actually enforcing the AND gate logic on the object itself
          * outputting the result on the lineValue of the output node.
          */
-        foreach (Transform child in transform) //loop over the children of the gate object (the nodes whether input or output) and find the input nodes
+        input = transform.Find("Input Node");
+        if (input.GetComponent<LogicInteractable>().occupied)
+            isActive = true;
+
+        if (isActive)
         {
-            if (child.name == "Input Node")
-                input = child.GetComponent<ConnectionControl>().lineValue;
+            output = !input.GetComponent<ConnectionControl>().lineValue;
+            transform.Find("Output Node").GetComponent<ConnectionControl>().lineValue = output;
         }
-
-        output = !input;
-
-        transform.Find("Output Node").GetComponent<ConnectionControl>().lineValue = output;
 
     }
 }

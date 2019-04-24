@@ -65,16 +65,22 @@ public class LogicInteractable : MonoBehaviour
                     if (firstClick.tag == "Input Node") //Swap the nodes if the first click was an input node (First click should always be an output node)
                     {
                         firstClick.GetComponent<LogicInteractable>().occupied = true;
+                        secondClick.GetComponent<LogicInteractable>().occupied = true;
                         GameObject temp = firstClick;
                         firstClick = secondClick;
                         secondClick = temp;
                     }
                     else if (secondClick.tag == "Input Node")
+                    {
                         secondClick.GetComponent<LogicInteractable>().occupied = true;
+                        firstClick.GetComponent<LogicInteractable>().occupied = true;
+                    }
 
                     //revert the firstClick node to its original color after the second click has been made
                     firstClick.GetComponent<SpriteRenderer>().color = firstClick.GetComponent<LogicInteractable>().origColor;
                     firstClick.GetComponent<LogicInteractable>().togColor = true;
+                    secondClick.GetComponent<SpriteRenderer>().color = secondClick.GetComponent<LogicInteractable>().origColor;
+                    secondClick.GetComponent<LogicInteractable>().togColor = true;
 
                     draw = true;
                 }
