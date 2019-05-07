@@ -1,0 +1,1132 @@
+fileFormatVersion: 2
+guid: f8b06270dade21144ab0150f92cccc4b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Door11_Frame
+    100002: Door11_Frame.001
+    100004: Door11_Frame.002
+    100006: Door11_Frame.003
+    100008: Door11_Frame.004
+    100010: Door11_Frame.005
+    100012: Door11_Frame.006
+    100014: Door11_Frame.007
+    100016: Door11_Frame.008
+    100018: Door11_Frame.009
+    100020: Door11_Frame.010
+    100022: Door11_Frame.011
+    100024: Door11_Frame.012
+    100026: Door11_Frame.013
+    100028: Door11_Frame.014
+    100030: Door11_Left
+    100032: Door11_Left.001
+    100034: Door11_Left.002
+    100036: Door11_Left.003
+    100038: Door11_Left.004
+    100040: Door11_Left.005
+    100042: Door11_Left.006
+    100044: Door11_Left.007
+    100046: Door11_Left.008
+    100048: Door11_Left.009
+    100050: Door11_Right
+    100052: Door11_Right.001
+    100054: Door11_Right.002
+    100056: Door11_Right.003
+    100058: Door11_Right.004
+    100060: Door11_Right.005
+    100062: Door11_Right.006
+    100064: Door11_Right.007
+    100066: Door11_Right.008
+    100068: Door11_Right.009
+    100070: Door11_Right.010
+    100072: Door11_Right.011
+    100074: Door11_Right.012
+    100076: Door11_Right.013
+    100078: Door11_Right.014
+    100080: Door1_Frame
+    100082: Door1_Hand
+    100084: Door1_Lock
+    100086: Door2_Frame
+    100088: Door2_Hand
+    100090: Door2_Lock
+    100092: Door3_Frame
+    100094: Door3_Hand
+    100096: Door3_Lock
+    100098: Door4_Frame
+    100100: Door4_Hand
+    100102: Door4_Lock
+    100104: Door5_Frame
+    100106: Door5_Hand
+    100108: Door5_Lock
+    100110: Door6_Frame
+    100112: Door6_Hand
+    100114: Door6_Lock
+    100116: Door6_Right
+    100118: Door6_Right.001
+    100120: Door6_Right.002
+    100122: Door6_Right.003
+    100124: Door6_Right.004
+    100126: Door6_Right.005
+    100128: Door6_Right.006
+    100130: Door6_Right.007
+    100132: Door6_Right.008
+    100134: Door6_Right.009
+    100136: Door6_Right.010
+    100138: Door6_Right.011
+    100140: Door6_Right.012
+    100142: Door6_Right.013
+    100144: Door6_Right.014
+    100146: Door6_Right.015
+    100148: Door6_Right.016
+    100150: Door7_Frame
+    100152: Door7_Hand
+    100154: Door7_Lock
+    100156: Door8_Frame
+    100158: Door8_Frame.001
+    100160: Door8_Hand
+    100162: Door8_Hand.001
+    100164: Door8_Lock
+    100166: Door8_Lock.001
+    100168: Floor
+    100170: Floor 1
+    100172: Floor 2
+    100174: Floor 3
+    100176: Floor 3.001
+    100178: Floor 3.002
+    100180: IEEE_Window 1
+    100182: IEEE_Window 2
+    100184: IEEE_Window 3
+    100186: LEAVES.000
+    100188: LEAVES.001
+    100190: LEAVES.002
+    100192: LightSet
+    100194: LightSet.001
+    100196: LightSet.002
+    100198: LightSet.003
+    100200: LightSet.004
+    100202: LightSet.005
+    100204: LightSet.006
+    100206: LightSet.007
+    100208: LightSet.008
+    100210: LightSet.009
+    100212: LightSet.010
+    100214: LightSet.011
+    100216: LightSet.012
+    100218: LightSet.013
+    100220: LightSet.014
+    100222: LightSet.015
+    100224: LightSet.016
+    100226: LightSet.017
+    100228: LightSet.018
+    100230: LightSet.019
+    100232: Name_Board
+    100234: Name_Board.001
+    100236: Name_Board.002
+    100238: Name_Board.003
+    100240: Name_Board.004
+    100242: Plane
+    100244: POT.000
+    100246: POT.001
+    100248: POT.002
+    100250: //RootNode
+    100252: Roof
+    100254: Roof 1
+    100256: Roof 1.001
+    100258: Roof 1.002
+    100260: SOIL.000
+    100262: SOIL.001
+    100264: SOIL.002
+    100266: stair_Window bottom
+    100268: stair_Window top
+    100270: Trash
+    100272: Trash_cover
+    100274: Wall 1
+    100276: Wall 2
+    100278: Wall 3
+    100280: Wall 4
+    100282: Wall 5
+    100284: Wall 5.001
+    100286: Wall 6
+    100288: Wall 6.001
+    100290: Wall 7
+    100292: Wall 8
+    100294: Window1_Frame
+    100296: Window1_Left
+    100298: Window1_Right
+    100300: Window2_Frame
+    100302: Window2_Left
+    100304: Window2_Right
+    100306: Window3_Background
+    100308: Window3_Frame
+    100310: Window3_Moving
+    100312: ZoneTable
+    100314: ZoneTable.001
+    100316: ZoneTable.002
+    100318: ZoneTable.003
+    100320: ZoneTable.004
+    100322: ZoneTable.005
+    100324: ZoneTable.006
+    100326: ZoneTable.007
+    100328: ZoneTable.008
+    100330: ZoneTable.009
+    100332: ZoneTable.010
+    100334: ZoneTable.011
+    100336: ZoneTable.012
+    100338: ZoneTable.013
+    100340: ZoneTable.014
+    100342: ZoneTable.015
+    100344: ZoneTable.016
+    100346: ZoneTable.017
+    100348: ZoneTable.018
+    100350: ZoneTable.019
+    100352: ZoneTable.020
+    100354: ZoneTable.021
+    100356: ZoneTable.022
+    400000: Door11_Frame
+    400002: Door11_Frame.001
+    400004: Door11_Frame.002
+    400006: Door11_Frame.003
+    400008: Door11_Frame.004
+    400010: Door11_Frame.005
+    400012: Door11_Frame.006
+    400014: Door11_Frame.007
+    400016: Door11_Frame.008
+    400018: Door11_Frame.009
+    400020: Door11_Frame.010
+    400022: Door11_Frame.011
+    400024: Door11_Frame.012
+    400026: Door11_Frame.013
+    400028: Door11_Frame.014
+    400030: Door11_Left
+    400032: Door11_Left.001
+    400034: Door11_Left.002
+    400036: Door11_Left.003
+    400038: Door11_Left.004
+    400040: Door11_Left.005
+    400042: Door11_Left.006
+    400044: Door11_Left.007
+    400046: Door11_Left.008
+    400048: Door11_Left.009
+    400050: Door11_Right
+    400052: Door11_Right.001
+    400054: Door11_Right.002
+    400056: Door11_Right.003
+    400058: Door11_Right.004
+    400060: Door11_Right.005
+    400062: Door11_Right.006
+    400064: Door11_Right.007
+    400066: Door11_Right.008
+    400068: Door11_Right.009
+    400070: Door11_Right.010
+    400072: Door11_Right.011
+    400074: Door11_Right.012
+    400076: Door11_Right.013
+    400078: Door11_Right.014
+    400080: Door1_Frame
+    400082: Door1_Hand
+    400084: Door1_Lock
+    400086: Door2_Frame
+    400088: Door2_Hand
+    400090: Door2_Lock
+    400092: Door3_Frame
+    400094: Door3_Hand
+    400096: Door3_Lock
+    400098: Door4_Frame
+    400100: Door4_Hand
+    400102: Door4_Lock
+    400104: Door5_Frame
+    400106: Door5_Hand
+    400108: Door5_Lock
+    400110: Door6_Frame
+    400112: Door6_Hand
+    400114: Door6_Lock
+    400116: Door6_Right
+    400118: Door6_Right.001
+    400120: Door6_Right.002
+    400122: Door6_Right.003
+    400124: Door6_Right.004
+    400126: Door6_Right.005
+    400128: Door6_Right.006
+    400130: Door6_Right.007
+    400132: Door6_Right.008
+    400134: Door6_Right.009
+    400136: Door6_Right.010
+    400138: Door6_Right.011
+    400140: Door6_Right.012
+    400142: Door6_Right.013
+    400144: Door6_Right.014
+    400146: Door6_Right.015
+    400148: Door6_Right.016
+    400150: Door7_Frame
+    400152: Door7_Hand
+    400154: Door7_Lock
+    400156: Door8_Frame
+    400158: Door8_Frame.001
+    400160: Door8_Hand
+    400162: Door8_Hand.001
+    400164: Door8_Lock
+    400166: Door8_Lock.001
+    400168: Floor
+    400170: Floor 1
+    400172: Floor 2
+    400174: Floor 3
+    400176: Floor 3.001
+    400178: Floor 3.002
+    400180: IEEE_Window 1
+    400182: IEEE_Window 2
+    400184: IEEE_Window 3
+    400186: LEAVES.000
+    400188: LEAVES.001
+    400190: LEAVES.002
+    400192: LightSet
+    400194: LightSet.001
+    400196: LightSet.002
+    400198: LightSet.003
+    400200: LightSet.004
+    400202: LightSet.005
+    400204: LightSet.006
+    400206: LightSet.007
+    400208: LightSet.008
+    400210: LightSet.009
+    400212: LightSet.010
+    400214: LightSet.011
+    400216: LightSet.012
+    400218: LightSet.013
+    400220: LightSet.014
+    400222: LightSet.015
+    400224: LightSet.016
+    400226: LightSet.017
+    400228: LightSet.018
+    400230: LightSet.019
+    400232: Name_Board
+    400234: Name_Board.001
+    400236: Name_Board.002
+    400238: Name_Board.003
+    400240: Name_Board.004
+    400242: Plane
+    400244: POT.000
+    400246: POT.001
+    400248: POT.002
+    400250: //RootNode
+    400252: Roof
+    400254: Roof 1
+    400256: Roof 1.001
+    400258: Roof 1.002
+    400260: SOIL.000
+    400262: SOIL.001
+    400264: SOIL.002
+    400266: stair_Window bottom
+    400268: stair_Window top
+    400270: Trash
+    400272: Trash_cover
+    400274: Wall 1
+    400276: Wall 2
+    400278: Wall 3
+    400280: Wall 4
+    400282: Wall 5
+    400284: Wall 5.001
+    400286: Wall 6
+    400288: Wall 6.001
+    400290: Wall 7
+    400292: Wall 8
+    400294: Window1_Frame
+    400296: Window1_Left
+    400298: Window1_Right
+    400300: Window2_Frame
+    400302: Window2_Left
+    400304: Window2_Right
+    400306: Window3_Background
+    400308: Window3_Frame
+    400310: Window3_Moving
+    400312: ZoneTable
+    400314: ZoneTable.001
+    400316: ZoneTable.002
+    400318: ZoneTable.003
+    400320: ZoneTable.004
+    400322: ZoneTable.005
+    400324: ZoneTable.006
+    400326: ZoneTable.007
+    400328: ZoneTable.008
+    400330: ZoneTable.009
+    400332: ZoneTable.010
+    400334: ZoneTable.011
+    400336: ZoneTable.012
+    400338: ZoneTable.013
+    400340: ZoneTable.014
+    400342: ZoneTable.015
+    400344: ZoneTable.016
+    400346: ZoneTable.017
+    400348: ZoneTable.018
+    400350: ZoneTable.019
+    400352: ZoneTable.020
+    400354: ZoneTable.021
+    400356: ZoneTable.022
+    2100000: Light Wood
+    2100002: Dark wood
+    2100004: DH_Black Metal
+    2100006: DH_Gold 1
+    2100008: DH_Hand Gold
+    2100010: Wall
+    2100012: Green Marble
+    2100014: White_Marbel_Wall
+    2100016: Window
+    2100018: Floor 1
+    2100020: Door Dark
+    2100022: LedFrame
+    2100024: Light
+    2100026: Light_intensity
+    2100028: Board
+    2100030: Green Table
+    2100032: Floor
+    2100034: Gray Marble
+    2100036: Stairs hand
+    2100038: No Name
+    2100040: Pot
+    2100042: Mud
+    2100044: Leaves
+    2100046: Windowwood
+    2100048: DH_Gold
+    2100050: window brown
+    2100052: Window_MetalFrame
+    2100054: Window_Glass
+    2100056: Window_black
+    2100058: Window_Background
+    2100060: Shine
+    2300000: Door11_Frame
+    2300002: Door11_Frame.001
+    2300004: Door11_Frame.002
+    2300006: Door11_Frame.003
+    2300008: Door11_Frame.004
+    2300010: Door11_Frame.005
+    2300012: Door11_Frame.006
+    2300014: Door11_Frame.007
+    2300016: Door11_Frame.008
+    2300018: Door11_Frame.009
+    2300020: Door11_Frame.010
+    2300022: Door11_Frame.011
+    2300024: Door11_Frame.012
+    2300026: Door11_Frame.013
+    2300028: Door11_Frame.014
+    2300030: Door11_Left
+    2300032: Door11_Left.001
+    2300034: Door11_Left.002
+    2300036: Door11_Left.003
+    2300038: Door11_Left.004
+    2300040: Door11_Left.005
+    2300042: Door11_Left.006
+    2300044: Door11_Left.007
+    2300046: Door11_Left.008
+    2300048: Door11_Left.009
+    2300050: Door11_Right
+    2300052: Door11_Right.001
+    2300054: Door11_Right.002
+    2300056: Door11_Right.003
+    2300058: Door11_Right.004
+    2300060: Door11_Right.005
+    2300062: Door11_Right.006
+    2300064: Door11_Right.007
+    2300066: Door11_Right.008
+    2300068: Door11_Right.009
+    2300070: Door11_Right.010
+    2300072: Door11_Right.011
+    2300074: Door11_Right.012
+    2300076: Door11_Right.013
+    2300078: Door11_Right.014
+    2300080: Door1_Frame
+    2300082: Door1_Hand
+    2300084: Door1_Lock
+    2300086: Door2_Frame
+    2300088: Door2_Hand
+    2300090: Door2_Lock
+    2300092: Door3_Frame
+    2300094: Door3_Hand
+    2300096: Door3_Lock
+    2300098: Door4_Frame
+    2300100: Door4_Hand
+    2300102: Door4_Lock
+    2300104: Door5_Frame
+    2300106: Door5_Hand
+    2300108: Door5_Lock
+    2300110: Door6_Frame
+    2300112: Door6_Hand
+    2300114: Door6_Lock
+    2300116: Door6_Right
+    2300118: Door6_Right.001
+    2300120: Door6_Right.002
+    2300122: Door6_Right.003
+    2300124: Door6_Right.004
+    2300126: Door6_Right.005
+    2300128: Door6_Right.006
+    2300130: Door6_Right.007
+    2300132: Door6_Right.008
+    2300134: Door6_Right.009
+    2300136: Door6_Right.010
+    2300138: Door6_Right.011
+    2300140: Door6_Right.012
+    2300142: Door6_Right.013
+    2300144: Door6_Right.014
+    2300146: Door6_Right.015
+    2300148: Door6_Right.016
+    2300150: Door7_Frame
+    2300152: Door7_Hand
+    2300154: Door7_Lock
+    2300156: Door8_Frame
+    2300158: Door8_Frame.001
+    2300160: Door8_Hand
+    2300162: Door8_Hand.001
+    2300164: Door8_Lock
+    2300166: Door8_Lock.001
+    2300168: Floor
+    2300170: Floor 1
+    2300172: Floor 2
+    2300174: Floor 3
+    2300176: Floor 3.001
+    2300178: Floor 3.002
+    2300180: IEEE_Window 1
+    2300182: IEEE_Window 2
+    2300184: IEEE_Window 3
+    2300186: LEAVES.000
+    2300188: LEAVES.001
+    2300190: LEAVES.002
+    2300192: LightSet
+    2300194: LightSet.001
+    2300196: LightSet.002
+    2300198: LightSet.003
+    2300200: LightSet.004
+    2300202: LightSet.005
+    2300204: LightSet.006
+    2300206: LightSet.007
+    2300208: LightSet.008
+    2300210: LightSet.009
+    2300212: LightSet.010
+    2300214: LightSet.011
+    2300216: LightSet.012
+    2300218: LightSet.013
+    2300220: LightSet.014
+    2300222: LightSet.015
+    2300224: LightSet.016
+    2300226: LightSet.017
+    2300228: LightSet.018
+    2300230: LightSet.019
+    2300232: Name_Board
+    2300234: Name_Board.001
+    2300236: Name_Board.002
+    2300238: Name_Board.003
+    2300240: Name_Board.004
+    2300242: Plane
+    2300244: POT.000
+    2300246: POT.001
+    2300248: POT.002
+    2300250: Roof
+    2300252: Roof 1
+    2300254: Roof 1.001
+    2300256: Roof 1.002
+    2300258: SOIL.000
+    2300260: SOIL.001
+    2300262: SOIL.002
+    2300264: stair_Window bottom
+    2300266: stair_Window top
+    2300268: Trash
+    2300270: Trash_cover
+    2300272: Wall 1
+    2300274: Wall 2
+    2300276: Wall 3
+    2300278: Wall 4
+    2300280: Wall 5
+    2300282: Wall 5.001
+    2300284: Wall 6
+    2300286: Wall 6.001
+    2300288: Wall 7
+    2300290: Wall 8
+    2300292: Window1_Frame
+    2300294: Window1_Left
+    2300296: Window1_Right
+    2300298: Window2_Frame
+    2300300: Window2_Left
+    2300302: Window2_Right
+    2300304: Window3_Background
+    2300306: Window3_Frame
+    2300308: Window3_Moving
+    2300310: ZoneTable
+    2300312: ZoneTable.001
+    2300314: ZoneTable.002
+    2300316: ZoneTable.003
+    2300318: ZoneTable.004
+    2300320: ZoneTable.005
+    2300322: ZoneTable.006
+    2300324: ZoneTable.007
+    2300326: ZoneTable.008
+    2300328: ZoneTable.009
+    2300330: ZoneTable.010
+    2300332: ZoneTable.011
+    2300334: ZoneTable.012
+    2300336: ZoneTable.013
+    2300338: ZoneTable.014
+    2300340: ZoneTable.015
+    2300342: ZoneTable.016
+    2300344: ZoneTable.017
+    2300346: ZoneTable.018
+    2300348: ZoneTable.019
+    2300350: ZoneTable.020
+    2300352: ZoneTable.021
+    2300354: ZoneTable.022
+    3300000: Door11_Frame
+    3300002: Door11_Frame.001
+    3300004: Door11_Frame.002
+    3300006: Door11_Frame.003
+    3300008: Door11_Frame.004
+    3300010: Door11_Frame.005
+    3300012: Door11_Frame.006
+    3300014: Door11_Frame.007
+    3300016: Door11_Frame.008
+    3300018: Door11_Frame.009
+    3300020: Door11_Frame.010
+    3300022: Door11_Frame.011
+    3300024: Door11_Frame.012
+    3300026: Door11_Frame.013
+    3300028: Door11_Frame.014
+    3300030: Door11_Left
+    3300032: Door11_Left.001
+    3300034: Door11_Left.002
+    3300036: Door11_Left.003
+    3300038: Door11_Left.004
+    3300040: Door11_Left.005
+    3300042: Door11_Left.006
+    3300044: Door11_Left.007
+    3300046: Door11_Left.008
+    3300048: Door11_Left.009
+    3300050: Door11_Right
+    3300052: Door11_Right.001
+    3300054: Door11_Right.002
+    3300056: Door11_Right.003
+    3300058: Door11_Right.004
+    3300060: Door11_Right.005
+    3300062: Door11_Right.006
+    3300064: Door11_Right.007
+    3300066: Door11_Right.008
+    3300068: Door11_Right.009
+    3300070: Door11_Right.010
+    3300072: Door11_Right.011
+    3300074: Door11_Right.012
+    3300076: Door11_Right.013
+    3300078: Door11_Right.014
+    3300080: Door1_Frame
+    3300082: Door1_Hand
+    3300084: Door1_Lock
+    3300086: Door2_Frame
+    3300088: Door2_Hand
+    3300090: Door2_Lock
+    3300092: Door3_Frame
+    3300094: Door3_Hand
+    3300096: Door3_Lock
+    3300098: Door4_Frame
+    3300100: Door4_Hand
+    3300102: Door4_Lock
+    3300104: Door5_Frame
+    3300106: Door5_Hand
+    3300108: Door5_Lock
+    3300110: Door6_Frame
+    3300112: Door6_Hand
+    3300114: Door6_Lock
+    3300116: Door6_Right
+    3300118: Door6_Right.001
+    3300120: Door6_Right.002
+    3300122: Door6_Right.003
+    3300124: Door6_Right.004
+    3300126: Door6_Right.005
+    3300128: Door6_Right.006
+    3300130: Door6_Right.007
+    3300132: Door6_Right.008
+    3300134: Door6_Right.009
+    3300136: Door6_Right.010
+    3300138: Door6_Right.011
+    3300140: Door6_Right.012
+    3300142: Door6_Right.013
+    3300144: Door6_Right.014
+    3300146: Door6_Right.015
+    3300148: Door6_Right.016
+    3300150: Door7_Frame
+    3300152: Door7_Hand
+    3300154: Door7_Lock
+    3300156: Door8_Frame
+    3300158: Door8_Frame.001
+    3300160: Door8_Hand
+    3300162: Door8_Hand.001
+    3300164: Door8_Lock
+    3300166: Door8_Lock.001
+    3300168: Floor
+    3300170: Floor 1
+    3300172: Floor 2
+    3300174: Floor 3
+    3300176: Floor 3.001
+    3300178: Floor 3.002
+    3300180: IEEE_Window 1
+    3300182: IEEE_Window 2
+    3300184: IEEE_Window 3
+    3300186: LEAVES.000
+    3300188: LEAVES.001
+    3300190: LEAVES.002
+    3300192: LightSet
+    3300194: LightSet.001
+    3300196: LightSet.002
+    3300198: LightSet.003
+    3300200: LightSet.004
+    3300202: LightSet.005
+    3300204: LightSet.006
+    3300206: LightSet.007
+    3300208: LightSet.008
+    3300210: LightSet.009
+    3300212: LightSet.010
+    3300214: LightSet.011
+    3300216: LightSet.012
+    3300218: LightSet.013
+    3300220: LightSet.014
+    3300222: LightSet.015
+    3300224: LightSet.016
+    3300226: LightSet.017
+    3300228: LightSet.018
+    3300230: LightSet.019
+    3300232: Name_Board
+    3300234: Name_Board.001
+    3300236: Name_Board.002
+    3300238: Name_Board.003
+    3300240: Name_Board.004
+    3300242: Plane
+    3300244: POT.000
+    3300246: POT.001
+    3300248: POT.002
+    3300250: Roof
+    3300252: Roof 1
+    3300254: Roof 1.001
+    3300256: Roof 1.002
+    3300258: SOIL.000
+    3300260: SOIL.001
+    3300262: SOIL.002
+    3300264: stair_Window bottom
+    3300266: stair_Window top
+    3300268: Trash
+    3300270: Trash_cover
+    3300272: Wall 1
+    3300274: Wall 2
+    3300276: Wall 3
+    3300278: Wall 4
+    3300280: Wall 5
+    3300282: Wall 5.001
+    3300284: Wall 6
+    3300286: Wall 6.001
+    3300288: Wall 7
+    3300290: Wall 8
+    3300292: Window1_Frame
+    3300294: Window1_Left
+    3300296: Window1_Right
+    3300298: Window2_Frame
+    3300300: Window2_Left
+    3300302: Window2_Right
+    3300304: Window3_Background
+    3300306: Window3_Frame
+    3300308: Window3_Moving
+    3300310: ZoneTable
+    3300312: ZoneTable.001
+    3300314: ZoneTable.002
+    3300316: ZoneTable.003
+    3300318: ZoneTable.004
+    3300320: ZoneTable.005
+    3300322: ZoneTable.006
+    3300324: ZoneTable.007
+    3300326: ZoneTable.008
+    3300328: ZoneTable.009
+    3300330: ZoneTable.010
+    3300332: ZoneTable.011
+    3300334: ZoneTable.012
+    3300336: ZoneTable.013
+    3300338: ZoneTable.014
+    3300340: ZoneTable.015
+    3300342: ZoneTable.016
+    3300344: ZoneTable.017
+    3300346: ZoneTable.018
+    3300348: ZoneTable.019
+    3300350: ZoneTable.020
+    3300352: ZoneTable.021
+    3300354: ZoneTable.022
+    4300000: Door8_Frame.001
+    4300002: Door8_Lock.001
+    4300004: Door8_Hand.001
+    4300006: Door6_Right.016
+    4300008: Door6_Right.015
+    4300010: Wall 5.001
+    4300012: Wall 6.001
+    4300014: Floor 3.001
+    4300016: Door11_Frame.014
+    4300018: Door11_Left.009
+    4300020: Door11_Right.014
+    4300022: LightSet.019
+    4300024: LightSet.015
+    4300026: LightSet.014
+    4300028: LightSet.013
+    4300030: Door11_Right.013
+    4300032: Door11_Left.008
+    4300034: Door11_Frame.013
+    4300036: Door11_Right.012
+    4300038: Door11_Left.007
+    4300040: Door11_Frame.012
+    4300042: Door11_Frame.011
+    4300044: Door11_Left.006
+    4300046: Door11_Right.011
+    4300048: Door11_Frame.010
+    4300050: Door11_Frame.009
+    4300052: Door11_Right.010
+    4300054: Door11_Right.009
+    4300056: Door6_Right.014
+    4300058: Door6_Right.013
+    4300060: Door6_Right.012
+    4300062: Door6_Right.011
+    4300064: Door6_Right.010
+    4300066: Door6_Right.009
+    4300068: Door6_Right.008
+    4300070: Door6_Right.007
+    4300072: Door6_Right.006
+    4300074: Door6_Right.005
+    4300076: Door6_Right.004
+    4300078: Door6_Right.003
+    4300080: Door6_Right.002
+    4300082: Door6_Right.001
+    4300084: Door11_Frame.008
+    4300086: Door11_Right.008
+    4300088: Door11_Left.005
+    4300090: IEEE_Window 3
+    4300092: IEEE_Window 2
+    4300094: IEEE_Window 1
+    4300096: Wall 8
+    4300098: LightSet.016
+    4300100: LightSet.010
+    4300102: ZoneTable.022
+    4300104: ZoneTable.021
+    4300106: ZoneTable.020
+    4300108: ZoneTable.019
+    4300110: ZoneTable.018
+    4300112: ZoneTable.017
+    4300114: ZoneTable.016
+    4300116: ZoneTable.015
+    4300118: ZoneTable.014
+    4300120: ZoneTable.013
+    4300122: ZoneTable.012
+    4300124: ZoneTable.011
+    4300126: ZoneTable.010
+    4300128: ZoneTable.009
+    4300130: ZoneTable.008
+    4300132: ZoneTable.007
+    4300134: ZoneTable.006
+    4300136: ZoneTable.005
+    4300138: ZoneTable.004
+    4300140: ZoneTable.003
+    4300142: ZoneTable.002
+    4300144: ZoneTable.001
+    4300146: ZoneTable
+    4300148: LightSet.018
+    4300150: LightSet.017
+    4300152: Roof 1.002
+    4300154: Roof 1.001
+    4300156: Floor 3.002
+    4300158: Wall 7
+    4300160: LightSet.012
+    4300162: LightSet.011
+    4300164: LightSet.009
+    4300166: LightSet.008
+    4300168: LightSet.007
+    4300170: LightSet.006
+    4300172: Floor 3
+    4300174: Floor 2
+    4300176: Wall 6
+    4300178: Wall 5
+    4300180: Wall 4
+    4300182: Roof 1
+    4300184: stair_Window top
+    4300186: stair_Window bottom
+    4300188: Plane
+    4300190: Floor 1
+    4300192: Door8_Hand
+    4300194: Door8_Lock
+    4300196: Door7_Lock
+    4300198: Door7_Hand
+    4300200: Door8_Frame
+    4300202: Wall 3
+    4300204: Trash_cover
+    4300206: LightSet.005
+    4300208: POT.001
+    4300210: SOIL.001
+    4300212: LEAVES.001
+    4300214: Door5_Lock
+    4300216: Door5_Hand
+    4300218: Door6_Right
+    4300220: Door6_Frame
+    4300222: Roof
+    4300224: Window3_Moving
+    4300226: Window3_Frame
+    4300228: Window3_Background
+    4300230: Window2_Left
+    4300232: Window2_Right
+    4300234: Window2_Frame
+    4300236: Window1_Right
+    4300238: Window1_Left
+    4300240: Window1_Frame
+    4300242: Name_Board.004
+    4300244: Name_Board.003
+    4300246: Name_Board.002
+    4300248: Name_Board.001
+    4300250: Trash
+    4300252: LightSet
+    4300254: LightSet.004
+    4300256: LightSet.003
+    4300258: LightSet.001
+    4300260: LightSet.002
+    4300262: Floor
+    4300264: Wall 2
+    4300266: Wall 1
+    4300268: Door3_Frame
+    4300270: Door2_Frame
+    4300272: Door4_Frame
+    4300274: Door5_Frame
+    4300276: Name_Board
+    4300278: Door7_Frame
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Board
+    second: {fileID: 2100000, guid: 821c1e8fa6eb9e8499e07975aba14288, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DH_Black Metal
+    second: {fileID: 2100000, guid: 1eaf3da1fa5ccad49ba49381417d451b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DH_Gold
+    second: {fileID: 2100000, guid: bd483a18818c8da48bea2cdc41c945c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DH_Gold 1
+    second: {fileID: 2100000, guid: 354c1214fe2d14b4b8a51a077d1750c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DH_Hand Gold
+    second: {fileID: 2100000, guid: e30bdc0fe98749044802ee3a266bc583, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark wood
+    second: {fileID: 2100000, guid: 802a62e031b3d524380169f69db9fd12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door Dark
+    second: {fileID: 2100000, guid: 897b841cfa63b5a46b5d6d6e96834130, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 293ab46c3e8ceba43a0f5716b181653b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor 1
+    second: {fileID: 2100000, guid: 293ab46c3e8ceba43a0f5716b181653b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gray Marble
+    second: {fileID: 2100000, guid: 0e917dee388b05e409e131426237bca3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green Marble
+    second: {fileID: 2100000, guid: b7c4a18f40bba6d47831c3d147ac89c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green Table
+    second: {fileID: 2100000, guid: 64efb1edf2f32b74f9ce54e81be3d187, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaves
+    second: {fileID: 2100000, guid: 5be61ca9fb658f443ba3f35edce94192, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LedFrame
+    second: {fileID: 2100000, guid: af466594942659c44970b1b59b28e659, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light
+    second: {fileID: 2100000, guid: dfe27b5d6d3802f41a7da12116d11dd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Wood
+    second: {fileID: 2100000, guid: 1b57a551d1eb15440ba550d9c2f3a221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light_intensity
+    second: {fileID: 2100000, guid: 77c2c7201c9a15e438a64555230e0070, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mud
+    second: {fileID: 2100000, guid: 4bc1d618d8ddb664eb04c317915cb0df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: e6c85a5d2d0b09541ad7d593a3d7bf29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pot
+    second: {fileID: 2100000, guid: c2c6d7425b6a54c49a53e2d132109ad8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shine
+    second: {fileID: 2100000, guid: 56a480996d1410a449825d1af465a073, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stairs hand
+    second: {fileID: 2100000, guid: ac4c5b8fdc2c58c4b84ef37aecd5311e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: 30d82994504c72c4eb333b9e993f6ec6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_Marbel_Wall
+    second: {fileID: 2100000, guid: fd869e9c025653e46a5707971b58fee0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: 3011fa2dd55c2664a80cbdf4e9ee053a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_Background
+    second: {fileID: 2100000, guid: 5066dd5ae1b0c3440a2e544b0cc7725f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_Glass
+    second: {fileID: 2100000, guid: 731f171ed2efab746995ba6a65b11bee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_MetalFrame
+    second: {fileID: 2100000, guid: 5ce5e1c154fffac48b9154547c1f7494, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_black
+    second: {fileID: 2100000, guid: 7913ab090266a3b428fa344f9d137202, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windowwood
+    second: {fileID: 2100000, guid: b1970fc1f24bdd847b84badf1c84d057, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window brown
+    second: {fileID: 2100000, guid: 49cc5b3a4448c4243bd7f21e50ff19e1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

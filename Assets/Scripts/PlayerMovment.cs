@@ -23,7 +23,7 @@ public class PlayerMovment : MonoBehaviour
         if (NavMesh.SamplePosition(pData.pointerCurrentRaycast.worldPosition, out hit, 4f, NavMesh.AllAreas))
             destinationPosition = hit.position;
         //else
-        //destinationPosition = pData.pointerCurrentRaycast.worldPosition;
+        destinationPosition = pData.pointerCurrentRaycast.worldPosition;
         agent.SetDestination(destinationPosition);
     }
     void Start()
