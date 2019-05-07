@@ -54,7 +54,7 @@ public class DoorOpen : MonoBehaviour
             else if (!Open)
             {
                 if (body.angularVelocity != Vector3.zero && body.velocity != Vector3.zero)
-                {   
+                {
                     body.AddForce(OpenForce * -1, ForceMode.Impulse);
                 }
                 body.AddForce(CloseForce, ForceMode.Impulse);

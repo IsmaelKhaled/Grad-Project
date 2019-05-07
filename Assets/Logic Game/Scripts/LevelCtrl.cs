@@ -1,4 +1,4 @@
-﻿    
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,7 +41,7 @@ public class LevelCtrl : MonoBehaviour
         {
             outputVals.Add(output.transform.Find("Input Node").GetComponent<ConnectionControl>());
         }
-        currentScene = 1;
+        currentScene = SceneManager.GetActiveScene().buildIndex;
          A = inputVals[0];
          B = inputVals[1];
          Cin = inputVals[2];

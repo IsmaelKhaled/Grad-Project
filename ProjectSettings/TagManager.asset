@@ -11,12 +11,6 @@ TagManager:
   - Input Supply
   - Target
   - Help
-  - exit
-  - nxt
-  - mainTag
-  - bathroom
-  - start
-  - txtback
   layers:
   - Default
   - TransparentFX
@@ -51,9 +45,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: back
-    uniqueID: 2190523115
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
