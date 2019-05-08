@@ -11,6 +11,18 @@ public class OpenLogicLab : MonoBehaviour
         
     }
 
+
+    void position_save()
+    {
+        PlayerPrefs.SetFloat("p_x", GameObject.Find("Mprotagnist").transform.position.x);
+        PlayerPrefs.SetFloat("p_y", GameObject.Find("Mprotagnist").transform.position.y);
+        PlayerPrefs.SetFloat("p_z", GameObject.Find("Mprotagnist").transform.position.z);
+
+        PlayerPrefs.SetInt("Saved", 1);
+        // You need to actually save the values!
+        PlayerPrefs.Save();
+    }
+
     private void OnMouseDown()
     {
         SceneManager.LoadScene("Logic Gates 0");
