@@ -18,7 +18,18 @@ public class CharacterAnimationTransition : MonoBehaviour {
     }
     private void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitInfo;
+
+            if (Physics.Raycast(ray, out hitInfo))
+            {
+                GetComponent<NavMeshAgent>().SetDestination(hitInfo.point);
+              
+            }
+        }
+
         anim.SetFloat("speed", navMesh.velocity.magnitude);
         if (greet)
         {
@@ -28,18 +39,22 @@ public class CharacterAnimationTransition : MonoBehaviour {
         anim.SetBool("stand", stand);
         anim.SetBool("typing", typing);
         anim.SetBool("talking", talking);
-        Motion();
+        //Motion();
     }
     
-    void Motion()
+    /*void Motion()
     {
 
         Vector3 moveVector = Vector3.zero;
         float verticalVelocity = 0f ;
         float speed = 2f;
         moveVector.x = Input.GetAxis("Horizontal") * speed;
+        
         moveVector.y = verticalVelocity;
+
+
         moveVector.z = Input.GetAxis("Vertical") * speed;
+       
         if(moveVector.x!=0 || moveVector.z != 0)
         {
             stand = true;
@@ -55,5 +70,5 @@ public class CharacterAnimationTransition : MonoBehaviour {
 
             }
         }
-    }
+    }*/
 }
