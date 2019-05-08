@@ -15,21 +15,24 @@ public class LevelCtrl : MonoBehaviour
     bool coroutineStarted = false;
     public GameObject completeLevelUI;
     public GameObject help;
+    int logicLabStartIdx;
     bool S ;
     bool Co;
     public Animator anim;
     GameObject[] gates;
     int currentScene;
+    Scene scene;
     bool fullyConnected = true;
     void Start()
     {
+        scene = SceneManager.GetActiveScene();
         GameObject[] i = GameObject.FindGameObjectsWithTag("Input Supply");
         inputs = new List<GameObject>(i);
         GameObject[] o = GameObject.FindGameObjectsWithTag("Target");
         outputs = new List<GameObject>(o);
         List<ConnectionControl> inputVals = new List<ConnectionControl>();
         List<ConnectionControl> outputVals = new List<ConnectionControl>();
-
+        logicLabStartIdx = SceneManager.GetSceneByName("Logic Lab 0").buildIndex;
         gates = GameObject.FindGameObjectsWithTag("Logic Gate");
 
         foreach (GameObject input in inputs)
@@ -53,15 +56,16 @@ public class LevelCtrl : MonoBehaviour
     }
     void Update()
     {
+        fullyConnected = true;
         foreach(GameObject gate in gates)
             foreach(Transform child in gate.transform)
             {
                 if (child.GetComponent<LogicInteractable>().occupied == false)
                     fullyConnected = false;
             }
+        Debug.Log("Fully connected =" + fullyConnected +". Coroutine =" + coroutineStarted);
         if (!coroutineStarted && fullyConnected)
             StartCoroutine(Level1Complete(currentScene));
-        fullyConnected = true;
     }
 
 
@@ -71,7 +75,7 @@ public class LevelCtrl : MonoBehaviour
         coroutineStarted = true;
         bool good = true;
         #region Test Cases 1
-        if(currentScene == 6)
+        if(scene.name == "Logic Gates 6")
         { 
             //Case 1
             {
@@ -204,7 +208,7 @@ public class LevelCtrl : MonoBehaviour
         }
         #endregion
         #region Test Cases 2
-        else if(currentScene == 5)
+        else if(scene.name == "Logic Gates 5")
         {
             {
                 A.lineValue = false;
@@ -264,14 +268,14 @@ public class LevelCtrl : MonoBehaviour
             }
         }
         #endregion
+        coroutineStarted = false;
         if (good)
             GameOver();
 
         A.lineValue = false;
         B.lineValue = false;
         Cin.lineValue = false;
-       // yield return new WaitForSeconds(4f);
-        coroutineStarted = false;
+        //yield return new WaitForSeconds(4f);
     }
     IEnumerator Fading()
     {
