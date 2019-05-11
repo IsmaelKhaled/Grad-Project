@@ -692,7 +692,87 @@ ModelImporter:
     4300264: MegaWall2
     4300266: MegaWall
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door Dark
+    second: {fileID: 2100000, guid: 897b841cfa63b5a46b5d6d6e96834130, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 293ab46c3e8ceba43a0f5716b181653b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor 1
+    second: {fileID: 2100000, guid: 293ab46c3e8ceba43a0f5716b181653b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gray Marble
+    second: {fileID: 2100000, guid: 0e917dee388b05e409e131426237bca3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leaves
+    second: {fileID: 2100000, guid: 5be61ca9fb658f443ba3f35edce94192, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LedFrame
+    second: {fileID: 2100000, guid: af466594942659c44970b1b59b28e659, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light
+    second: {fileID: 2100000, guid: dfe27b5d6d3802f41a7da12116d11dd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Wood
+    second: {fileID: 2100000, guid: 1b57a551d1eb15440ba550d9c2f3a221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mud
+    second: {fileID: 2100000, guid: 4bc1d618d8ddb664eb04c317915cb0df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pot
+    second: {fileID: 2100000, guid: c2c6d7425b6a54c49a53e2d132109ad8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: 2115a0ccefa696e4e88abcf38c2cfada, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_Marbel_Wall
+    second: {fileID: 2100000, guid: fd869e9c025653e46a5707971b58fee0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: 3011fa2dd55c2664a80cbdf4e9ee053a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_Glass.001
+    second: {fileID: 2100008, guid: 0b864f5efc0afa2499a601391e82c6f6, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windowwood
+    second: {fileID: 2100000, guid: 0b864f5efc0afa2499a601391e82c6f6, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windowwood.002
+    second: {fileID: 2100000, guid: 0b864f5efc0afa2499a601391e82c6f6, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
