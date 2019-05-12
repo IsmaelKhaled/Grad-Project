@@ -762,17 +762,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Window_Glass.001
-    second: {fileID: 2100008, guid: 0b864f5efc0afa2499a601391e82c6f6, type: 3}
+    second: {fileID: 2100000, guid: 731f171ed2efab746995ba6a65b11bee, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Windowwood
-    second: {fileID: 2100000, guid: 0b864f5efc0afa2499a601391e82c6f6, type: 3}
+    second: {fileID: 2100000, guid: b1970fc1f24bdd847b84badf1c84d057, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Windowwood.002
-    second: {fileID: 2100000, guid: 0b864f5efc0afa2499a601391e82c6f6, type: 3}
+    second: {fileID: 2100000, guid: b1970fc1f24bdd847b84badf1c84d057, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
