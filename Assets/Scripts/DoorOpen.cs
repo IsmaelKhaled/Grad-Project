@@ -21,20 +21,19 @@ public class DoorOpen : MonoBehaviour
     private void Update()
     {
         /*Debug.Log(body.velocity);*/
-        //Debug.Log(transform.localEulerAngles);
-        if((transform.localEulerAngles.z >= MaxAngle || transform.localEulerAngles.z <= MinAngle) && body.angularVelocity != Vector3.zero && body.velocity != Vector3.zero)
+        Debug.Log(transform.gameObject.name + " : " + (transform.eulerAngles.y > 180? new Vector3(0,180,0) - transform.eulerAngles:transform.eulerAngles));
+        float zAngle = transform.eulerAngles.y;
+        if(zAngle > 180)
+        {
+            zAngle = 180 - zAngle;
+            
+        }
+        //zAngle = Mathf.Abs(zAngle);
+        if ((zAngle >= MaxAngle || zAngle <= MinAngle) && body.angularVelocity != Vector3.zero && body.velocity != Vector3.zero)
         {
             body.angularVelocity = Vector3.zero;
             body.velocity = Vector3.zero;
         }
-        /*if(transform.eulerAngles.y%180 >= 94 && Open == false)
-        {
-            body.AddForce(OpenForce*-1, ForceMode.Impulse);
-        }
-        if (transform.eulerAngles.y % 180 <= 0 && Open == true)
-        {
-            body.AddForce(CloseForce*-1, ForceMode.Impulse);
-        }*/
         
     }
     private void OnMouseDown()
