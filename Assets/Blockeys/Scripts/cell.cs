@@ -1,12 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class cell : MonoBehaviour {
 
-    public int value = 0;
+   
     public int id;
-    
+    public GameObject theGrid;
+
+    public delegate void MyMethod();
+    public MyMethod val;
+
+
     bool collided = false;
     public GameObject collidingObject; // used in calcCols to get colliding object (the die) in a cell
     private AudioSource source;
@@ -22,17 +29,31 @@ public class cell : MonoBehaviour {
         if (collidingObject == null)
             collided = false;
 	}
-    
+
+
+
+
     void OnTriggerStay2D(Collider2D col) //When a dice enters a cell (and the mouse is not held anymore)
     {
         if (!collided && !Input.GetKey(KeyCode.Mouse0))
         {
-            int val = col.GetComponent<movement>().value;
-            value = val;
+            if (col.tag == "Right")
+            {
+                val = new MyMethod(col.GetComponent<MoveRightFn>().MoveRight);
+            }
+            else if (col.tag == "Left")
+            {
+                val = new MyMethod(col.GetComponent<MoveRightFn>().MoveLeft);
+            }
+
+            //Debug.Log(val);
+            //this.val();
             collided = true;
             collidingObject = col.gameObject;
             collidingObject.transform.position = transform.position;
             source.PlayOneShot(moveDice, 1);
+            theGrid.GetComponent<calcCols>().Execute();
+
 
         }
     }
@@ -40,7 +61,7 @@ public class cell : MonoBehaviour {
     {
         if (collided && collidingObject == col.gameObject)
         {
-            value = 0;
+           
             collided = false;
             collidingObject = null;
         }

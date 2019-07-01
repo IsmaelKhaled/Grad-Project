@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class movement : MonoBehaviour {
+public class BlockMovement : MonoBehaviour {
 
     public int value = 4;
-
 	// Use this for initialization
 	void Start () {
 		
@@ -18,9 +18,8 @@ public class movement : MonoBehaviour {
 
     void OnMouseDrag() //Click and drag for dice
     {
-        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
+        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -0.8423f);
         Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-        transform.position = (Vector2)objPosition;
+        transform.position = new Vector3(objPosition.x, objPosition.y, -1);
     }
 }

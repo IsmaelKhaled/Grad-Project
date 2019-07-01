@@ -15,11 +15,11 @@ public class calc : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        rowSum = sumRowVals();
-        sumValue.text = rowSum.ToString(); //update row sum in UI
+      //  rowSum = sumRowVals();
+     //   sumValue.text = rowSum.ToString(); //update row sum in UI
 	}
 
-    int sumRowVals()
+   /* int sumRowVals()
     {
        int sum = 0;
        foreach (GameObject c in cells)
@@ -27,7 +27,7 @@ public class calc : MonoBehaviour {
            sum += c.GetComponent<cell>().value;
        }
        return sum;
-    }
+    }*/
 
     
 

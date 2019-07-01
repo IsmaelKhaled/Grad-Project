@@ -17,6 +17,16 @@ TagManager:
   - bathroom
   - start
   - txtback
+  - Right
+  - Left
+  - value
+  - variable
+  - 1Bar
+  - 3Bar
+  - 5Bar
+  - myMain
+  - myFor
+  - Neck
   layers:
   - Default
   - TransparentFX

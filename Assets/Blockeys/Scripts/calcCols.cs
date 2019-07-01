@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class calcCols : MonoBehaviour {
     // this script is responsible for calculating the column sums and scoring so far
     public int[] columnSums = new int [6];
+//    public delegate void MyMethod();
+//   public List<MyMethod> myList = new List<MyMethod>();
+    public GameObject thePlayer;
     public int[] rowSums = new int[6];
     public float timer;
     public Text[] columnValues;
@@ -35,7 +39,39 @@ public class calcCols : MonoBehaviour {
                 }
             }
 	}
-	
+
+
+    List<Action> MyFunctions = new List<Action>();
+    
+
+/*    public void RunFns() //executes all the functions in actions list
+    {
+        foreach (var RunFn in MyFunctions)
+        {
+            Debug.Log("i work");
+            RunFn();
+        }
+    }*/
+
+
+    public void Execute() {
+        Debug.Log("Execute");
+                //Debug.Log(transform);
+        foreach (Transform child1 in transform) //Add the cells of a column to a list, unefficient way but works
+        {
+          
+
+            foreach (Transform child in child1.transform)
+            {
+                if (child.GetComponent<cell>().val != null)
+                {
+                    child.GetComponent<cell>().val();
+                    
+                   
+                }
+            }
+        }
+    }
 	// Update is called once per frame
 	void Update ()
     {
@@ -43,35 +79,48 @@ public class calcCols : MonoBehaviour {
         {
             timer = Time.time;
 
-         
+           
             
 
         }
 	}
 
-   /* int[] sumCols() // sums the values on cells in a column
+  /*public void AddDelegates() // sums the values on cells in a column
     {
+        
+
         int[] colSums = new int[6];
         int i=0;
         foreach (Transform child1 in transform)
          {
              rowSums[i + 1] = child1.GetComponent<calc>().rowSum;
             foreach (Transform child in child1.transform)
-                {
-                    if (child.GetComponent<cell>().id % 5 == 0)
-                        colSums[5] += child.GetComponent<cell>().value;
-                    else if (child.GetComponent<cell>().id % 5 == 1)
-                        colSums[1] += child.GetComponent<cell>().value;
-                    else if (child.GetComponent<cell>().id % 5 == 2)
-                        colSums[2] += child.GetComponent<cell>().value;
-                    else if (child.GetComponent<cell>().id % 5 == 3)
-                        colSums[3] += child.GetComponent<cell>().value;
-                    else if (child.GetComponent<cell>().id % 5 == 4)
-                        colSums[4] += child.GetComponent<cell>().value;
+            {
+                if (child.GetComponent<cell>().id % 5 == 0) {
+                    // colSums[5] += child.GetComponent<cell>().value;
+
+                    //myList.Add(child.GetComponent<cell>().val);
+
                 }
-            i++;
+                else if (child.GetComponent<cell>().id % 5 == 1) {
+                    // colSums[1] += child.GetComponent<cell>().value;
+                    Debug.Log(child.GetComponent<cell>().id);
+                Debug.Log(child.GetComponent<cell>());
+                //myList.Add(child.GetComponent<cell>().val);
             }
-        return colSums;
+                else if (child.GetComponent<cell>().id % 5 == 2)
+                    //colSums[2] += child.GetComponent<cell>().value;
+                    //myList.Add(child.GetComponent<cell>().val);
+                else if (child.GetComponent<cell>().id % 5 == 3)
+                    //   colSums[3] += child.GetComponent<cell>().value;
+                    //myList.Add(child.GetComponent<cell>().val);
+                else if (child.GetComponent<cell>().id % 5 == 4)
+                    //  colSums[4] += child.GetComponent<cell>().value;
+                    //myList.Add(child.GetComponent<cell>().val);
+            }
+            i++;    
+            }
+        return myList;
     }*/
 
     /*void gotTen() // Detect if a 10 is scored on a row or column (currently bugged, only detects and destroys columns if row & column are both 10
