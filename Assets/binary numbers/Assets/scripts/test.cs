@@ -9,6 +9,10 @@ public class test : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] float  allowTime;
     bool allowed;
+
+    public AudioSource src;
+    public AudioClip TurnOn;
+    public AudioClip TurnOff;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,16 +44,12 @@ public class test : MonoBehaviour
 
                     if (!Lighted)
                     {
-                        anim.SetBool("hoba", true);
-                        anim.SetBool("TurnOn", true);
-                        Lighted = true;
+                        turn_on();
 
                     }
                     else
                     {
-                        anim.SetBool("hoba", false);
-                        anim.SetBool("TurnOn", false);
-                        Lighted = false;
+                        turn_of();
 
                     }
 
@@ -60,5 +60,22 @@ public class test : MonoBehaviour
             }
         }
         
+    }
+
+    public void turn_on()
+    {
+        anim.SetBool("hoba", true);
+        anim.SetBool("TurnOn", true);
+        Lighted = true;
+        src.clip = TurnOn;
+        src.Play();
+    }
+    public void turn_of()
+    {
+        anim.SetBool("hoba", false);
+        anim.SetBool("TurnOn", false);
+        Lighted = false;
+        src.clip = TurnOff;
+        src.Play();
     }
 }

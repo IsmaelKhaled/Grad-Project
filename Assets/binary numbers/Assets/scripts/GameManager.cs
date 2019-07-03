@@ -14,14 +14,19 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] electricity;
     public GameObject illumination;
-    [SerializeField]
+
     bool illuminate = false;
     float alpha = 0f;
+
+    public GameObject elnormakano;
+    public AudioSource src;
 
     [SerializeField]
     int CurrentNumber;
     [SerializeField]
     int RandomNumber;
+
+    public bool StartGame = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +39,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!Decided)
+        if (!Decided && StartGame)
         {
+            src.Play();
             DecideTime += Time.deltaTime;
             RandomNumber = Random.Range(0, 1024);
             number.text = "" + RandomNumber;
@@ -61,6 +67,7 @@ public class GameManager : MonoBehaviour
             }
             if (CurrentNumber == RandomNumber)
             {
+                src.Stop();
                 number.text = "YaaaaY!";
                 Invoke("EndGame", 2f);
                 electricity[0].SetActive(true); electricity[1].SetActive(true);
@@ -76,6 +83,7 @@ public class GameManager : MonoBehaviour
 
     void EndGame ()
     {
+        elnormakano.AddComponent<AudioSource>().Play();
         panel.SetActive(true);
     }
 

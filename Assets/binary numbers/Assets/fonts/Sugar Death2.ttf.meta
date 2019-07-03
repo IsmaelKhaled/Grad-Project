@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: fe1d3732fbbc8e8498a225cd8077d21b
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Sugar Death 2
+  fontNames:
+  - Sugar Death 2
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: bc270d926e83f324e98c6957d23ccc82, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
