@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class gamecontrol : MonoBehaviour
 {
     public TextMeshProUGUI value;
@@ -12,7 +13,7 @@ public class gamecontrol : MonoBehaviour
     public TextMeshProUGUI finalScore;
     public TextMeshProUGUI timer;
     public Resistance resistance;
-
+    public GameObject Particles;
     private float randGoal;
     private int score_num=0;
     float[] factors = new float[] { 1f, 10f, 100f, 1000f, 10000f, 100000f, 1000000f,10000000f,100000000f,1000000000f, 0.1f, 0.01f};
@@ -34,6 +35,7 @@ public class gamecontrol : MonoBehaviour
     {
         match=GetComponent<AudioSource>();
         allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        Particles.SetActive(true);
         updategoal();
         InvokeRepeating("checkScore",1f,0.5f);
     }
@@ -64,7 +66,7 @@ public class gamecontrol : MonoBehaviour
     }
     
 
-    void checkScore()
+    public void checkScore()
     {
         if (resistance.value == randGoal)
         {
@@ -136,6 +138,7 @@ public class gamecontrol : MonoBehaviour
         GameObject helpbutton = GameObject.FindGameObjectWithTag("helpbuttom");
         helpbutton.transform.GetChild(0).gameObject.SetActive(false);
         finalScore.text=score_num.ToString();
+        Particles.GetComponent<ParticleControl>().GameOver();
     }
 
     void controlAudio(bool play) 
@@ -172,6 +175,10 @@ public class gamecontrol : MonoBehaviour
         gameover();
         GameObject extPanel = GameObject.FindGameObjectWithTag("exitbutton");
         extPanel.transform.GetChild(0).gameObject.SetActive(false);
+    }
+    public void mainmenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }

@@ -18,7 +18,7 @@ public class ParticleControl : MonoBehaviour
         }
     }
     
-    private void LateUpdate()
+    private void Update()
     {
         if (!playing)
         {
@@ -71,5 +71,12 @@ public class ParticleControl : MonoBehaviour
         }
         return point;
         
+    }
+    public void GameOver()
+    {
+        for (int i = 0; i < Particles.Length; i++)
+        {
+            Particles[i].SetActive(false);
+        }
     }
 }
