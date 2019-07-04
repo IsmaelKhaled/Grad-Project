@@ -1,0 +1,842 @@
+fileFormatVersion: 2
+guid: 0d79af4a95b29d047aa8b7356f7a4f8d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Door11_Frame.015
+    100004: Door11_Left.010
+    100006: Door11_Right.019
+    100008: Drawing Roof
+    100010: //RootNode
+    100012: DrawingMiniTable
+    100014: DrawingMiniTable.001
+    100016: DrawingMiniTable.002
+    100018: DrawingMiniTable.003
+    100020: DrawingMiniTable.004
+    100022: DrawingMiniTable.005
+    100024: DrawingMiniTable.006
+    100026: DrawingMiniTable.007
+    100028: DrawingMiniTable.008
+    100030: DrawingMiniTable.009
+    100032: DrawingMiniTable.010
+    100034: DrawingMiniTable.011
+    100036: DrawingMiniTable.012
+    100038: DrawingMiniTable.013
+    100040: DrawingMiniTable.014
+    100042: DrawingMiniTable.015
+    100044: DrawingMiniTable.016
+    100046: DrawingMiniTable.017
+    100048: DrawingMiniTable.018
+    100050: DrawingMiniTable.019
+    100052: DrawingMiniTable.020
+    100054: DrawingMiniTable.021
+    100056: DrawingMiniTable.022
+    100058: DrawingMiniTable.023
+    100060: DrawingMiniTable.024
+    100062: DrawingMiniTable.025
+    100064: DrawingMiniTable.026
+    100066: DrawingMiniTable.027
+    100068: DrawingMiniTable.028
+    100070: DrawingMiniTable.029
+    100072: DrawingMiniTable.030
+    100074: DrawingMiniTable.031
+    100076: DrawingTable
+    100078: DrawingWall
+    100080: DrwaingChair
+    100082: DrwaingChair.001
+    100084: DrwaingChair.002
+    100086: DrwaingChair.003
+    100088: DrwaingChair.004
+    100090: DrwaingChair.005
+    100092: DrwaingChair.006
+    100094: DrwaingChair.007
+    100096: DrwaingChair.008
+    100098: DrwaingChair.009
+    100100: DrwaingChair.010
+    100102: DrwaingChair.011
+    100104: DrwaingChair.012
+    100106: DrwaingChair.013
+    100108: DrwaingChair.014
+    100110: DrwaingChair.015
+    100112: DrwaingChair.016
+    100114: DrwaingChair.017
+    100116: DrwaingChair.018
+    100118: DrwaingChair.019
+    100120: DrwaingChair.020
+    100122: DrwaingChair.021
+    100124: DrwaingChair.022
+    100126: DrwaingChair.023
+    100128: DrwaingChair.024
+    100130: DrwaingChair.025
+    100132: DrwaingChair.026
+    100134: DrwaingChair.027
+    100136: DrwaingChair.028
+    100138: DrwaingChair.029
+    100140: DrwaingChair.030
+    100142: DrwaingChair.031
+    100144: Floor 2.002
+    100146: Floor 2.003
+    100148: Floor 2.004
+    100150: Kharsana Roof
+    100152: Kharsana Stairs
+    100154: Kharsana Stairs Hand
+    100156: Kharsana Stairs Wall
+    100158: LightSet.025
+    100160: LightSet.026
+    100162: LightSet.027
+    100164: LightSet.028
+    100166: LightSet.029
+    100168: LightSet.030
+    100170: LightSet.031
+    100172: LightSet.032
+    100174: LightSet.033
+    100176: LightSet.034
+    100178: LightSet.035
+    100180: LightSet.036
+    100182: MegaWall
+    100184: MegaWall2
+    100186: MegaWindowFrame
+    100188: MegaWindowFrame.001
+    100190: MegaWindowFrame.002
+    100192: MegaWindowFrame.003
+    100194: MegaWindowFrame.004
+    100196: MegaWindowFrame.005
+    100198: MegaWindowFrame.006
+    100200: MegaWindowFrame.007
+    100202: MegaWindowFrame.008
+    100204: MegaWindowFrame.009
+    100206: MegaWindowFrame.010
+    100208: MegaWindowFrame.011
+    100210: MegaWindowGrid
+    100212: MegaWindowGrid.001
+    100214: MegaWindowGrid.002
+    100216: MegaWindowGrid.003
+    100218: MegaWindowGrid.004
+    100220: MegaWindowGrid.005
+    100222: MegaWindowGrid.006
+    100224: MegaWindowGrid.007
+    100226: MegaWindowLeft
+    100228: MegaWindowLeft.001
+    100230: MegaWindowLeft.002
+    100232: MegaWindowLeft.003
+    100234: MegaWindowLeft.004
+    100236: MegaWindowLeft.005
+    100238: MegaWindowLeft.006
+    100240: MegaWindowLeft.007
+    100242: MegaWindowLeft.008
+    100244: MegaWindowLeft.009
+    100246: MegaWindowLeft.010
+    100248: MegaWindowLeft.011
+    100250: MegaWindowRight
+    100252: MegaWindowRight.001
+    100254: MegaWindowRight.002
+    100256: MegaWindowRight.003
+    100258: MegaWindowRight.004
+    100260: MegaWindowRight.005
+    100262: MegaWindowRight.006
+    100264: MegaWindowRight.007
+    100266: MegaWindowRight.008
+    100268: MegaWindowRight.009
+    100270: MegaWindowRight.010
+    100272: MegaWindowRight.011
+    100274: mid extend
+    100276: Roof 1.004
+    100278: Roof 1.005
+    100280: stair_Window bottom.001
+    100282: stair_Window top.001
+    100284: WhiteBoard
+    100286: WhiteBoard.001
+    400000: Camera
+    400002: Door11_Frame.015
+    400004: Door11_Left.010
+    400006: Door11_Right.019
+    400008: Drawing Roof
+    400010: //RootNode
+    400012: DrawingMiniTable
+    400014: DrawingMiniTable.001
+    400016: DrawingMiniTable.002
+    400018: DrawingMiniTable.003
+    400020: DrawingMiniTable.004
+    400022: DrawingMiniTable.005
+    400024: DrawingMiniTable.006
+    400026: DrawingMiniTable.007
+    400028: DrawingMiniTable.008
+    400030: DrawingMiniTable.009
+    400032: DrawingMiniTable.010
+    400034: DrawingMiniTable.011
+    400036: DrawingMiniTable.012
+    400038: DrawingMiniTable.013
+    400040: DrawingMiniTable.014
+    400042: DrawingMiniTable.015
+    400044: DrawingMiniTable.016
+    400046: DrawingMiniTable.017
+    400048: DrawingMiniTable.018
+    400050: DrawingMiniTable.019
+    400052: DrawingMiniTable.020
+    400054: DrawingMiniTable.021
+    400056: DrawingMiniTable.022
+    400058: DrawingMiniTable.023
+    400060: DrawingMiniTable.024
+    400062: DrawingMiniTable.025
+    400064: DrawingMiniTable.026
+    400066: DrawingMiniTable.027
+    400068: DrawingMiniTable.028
+    400070: DrawingMiniTable.029
+    400072: DrawingMiniTable.030
+    400074: DrawingMiniTable.031
+    400076: DrawingTable
+    400078: DrawingWall
+    400080: DrwaingChair
+    400082: DrwaingChair.001
+    400084: DrwaingChair.002
+    400086: DrwaingChair.003
+    400088: DrwaingChair.004
+    400090: DrwaingChair.005
+    400092: DrwaingChair.006
+    400094: DrwaingChair.007
+    400096: DrwaingChair.008
+    400098: DrwaingChair.009
+    400100: DrwaingChair.010
+    400102: DrwaingChair.011
+    400104: DrwaingChair.012
+    400106: DrwaingChair.013
+    400108: DrwaingChair.014
+    400110: DrwaingChair.015
+    400112: DrwaingChair.016
+    400114: DrwaingChair.017
+    400116: DrwaingChair.018
+    400118: DrwaingChair.019
+    400120: DrwaingChair.020
+    400122: DrwaingChair.021
+    400124: DrwaingChair.022
+    400126: DrwaingChair.023
+    400128: DrwaingChair.024
+    400130: DrwaingChair.025
+    400132: DrwaingChair.026
+    400134: DrwaingChair.027
+    400136: DrwaingChair.028
+    400138: DrwaingChair.029
+    400140: DrwaingChair.030
+    400142: DrwaingChair.031
+    400144: Floor 2.002
+    400146: Floor 2.003
+    400148: Floor 2.004
+    400150: Kharsana Roof
+    400152: Kharsana Stairs
+    400154: Kharsana Stairs Hand
+    400156: Kharsana Stairs Wall
+    400158: LightSet.025
+    400160: LightSet.026
+    400162: LightSet.027
+    400164: LightSet.028
+    400166: LightSet.029
+    400168: LightSet.030
+    400170: LightSet.031
+    400172: LightSet.032
+    400174: LightSet.033
+    400176: LightSet.034
+    400178: LightSet.035
+    400180: LightSet.036
+    400182: MegaWall
+    400184: MegaWall2
+    400186: MegaWindowFrame
+    400188: MegaWindowFrame.001
+    400190: MegaWindowFrame.002
+    400192: MegaWindowFrame.003
+    400194: MegaWindowFrame.004
+    400196: MegaWindowFrame.005
+    400198: MegaWindowFrame.006
+    400200: MegaWindowFrame.007
+    400202: MegaWindowFrame.008
+    400204: MegaWindowFrame.009
+    400206: MegaWindowFrame.010
+    400208: MegaWindowFrame.011
+    400210: MegaWindowGrid
+    400212: MegaWindowGrid.001
+    400214: MegaWindowGrid.002
+    400216: MegaWindowGrid.003
+    400218: MegaWindowGrid.004
+    400220: MegaWindowGrid.005
+    400222: MegaWindowGrid.006
+    400224: MegaWindowGrid.007
+    400226: MegaWindowLeft
+    400228: MegaWindowLeft.001
+    400230: MegaWindowLeft.002
+    400232: MegaWindowLeft.003
+    400234: MegaWindowLeft.004
+    400236: MegaWindowLeft.005
+    400238: MegaWindowLeft.006
+    400240: MegaWindowLeft.007
+    400242: MegaWindowLeft.008
+    400244: MegaWindowLeft.009
+    400246: MegaWindowLeft.010
+    400248: MegaWindowLeft.011
+    400250: MegaWindowRight
+    400252: MegaWindowRight.001
+    400254: MegaWindowRight.002
+    400256: MegaWindowRight.003
+    400258: MegaWindowRight.004
+    400260: MegaWindowRight.005
+    400262: MegaWindowRight.006
+    400264: MegaWindowRight.007
+    400266: MegaWindowRight.008
+    400268: MegaWindowRight.009
+    400270: MegaWindowRight.010
+    400272: MegaWindowRight.011
+    400274: mid extend
+    400276: Roof 1.004
+    400278: Roof 1.005
+    400280: stair_Window bottom.001
+    400282: stair_Window top.001
+    400284: WhiteBoard
+    400286: WhiteBoard.001
+    2000000: Camera
+    2100000: Floor 1
+    2100002: LedFrame
+    2100004: Light
+    2100006: Wall
+    2100008: Blackironwall
+    2100010: Windowwood
+    2100012: DrwaingBoard
+    2100014: Table
+    2100016: Door Dark
+    2100018: Window_MetalFrame
+    2100020: whiteironwall
+    2100022: Window
+    2100024: Window_Glass.001
+    2100026: DrawingFloorMarbel
+    2100028: Stairs hand
+    2100030: Floor
+    2100032: DrawingMarbel
+    2300000: Door11_Frame.015
+    2300002: Door11_Left.010
+    2300004: Door11_Right.019
+    2300006: Drawing Roof
+    2300008: DrawingMiniTable
+    2300010: DrawingMiniTable.001
+    2300012: DrawingMiniTable.002
+    2300014: DrawingMiniTable.003
+    2300016: DrawingMiniTable.004
+    2300018: DrawingMiniTable.005
+    2300020: DrawingMiniTable.006
+    2300022: DrawingMiniTable.007
+    2300024: DrawingMiniTable.008
+    2300026: DrawingMiniTable.009
+    2300028: DrawingMiniTable.010
+    2300030: DrawingMiniTable.011
+    2300032: DrawingMiniTable.012
+    2300034: DrawingMiniTable.013
+    2300036: DrawingMiniTable.014
+    2300038: DrawingMiniTable.015
+    2300040: DrawingMiniTable.016
+    2300042: DrawingMiniTable.017
+    2300044: DrawingMiniTable.018
+    2300046: DrawingMiniTable.019
+    2300048: DrawingMiniTable.020
+    2300050: DrawingMiniTable.021
+    2300052: DrawingMiniTable.022
+    2300054: DrawingMiniTable.023
+    2300056: DrawingMiniTable.024
+    2300058: DrawingMiniTable.025
+    2300060: DrawingMiniTable.026
+    2300062: DrawingMiniTable.027
+    2300064: DrawingMiniTable.028
+    2300066: DrawingMiniTable.029
+    2300068: DrawingMiniTable.030
+    2300070: DrawingMiniTable.031
+    2300072: DrawingTable
+    2300074: DrawingWall
+    2300076: DrwaingChair
+    2300078: DrwaingChair.001
+    2300080: DrwaingChair.002
+    2300082: DrwaingChair.003
+    2300084: DrwaingChair.004
+    2300086: DrwaingChair.005
+    2300088: DrwaingChair.006
+    2300090: DrwaingChair.007
+    2300092: DrwaingChair.008
+    2300094: DrwaingChair.009
+    2300096: DrwaingChair.010
+    2300098: DrwaingChair.011
+    2300100: DrwaingChair.012
+    2300102: DrwaingChair.013
+    2300104: DrwaingChair.014
+    2300106: DrwaingChair.015
+    2300108: DrwaingChair.016
+    2300110: DrwaingChair.017
+    2300112: DrwaingChair.018
+    2300114: DrwaingChair.019
+    2300116: DrwaingChair.020
+    2300118: DrwaingChair.021
+    2300120: DrwaingChair.022
+    2300122: DrwaingChair.023
+    2300124: DrwaingChair.024
+    2300126: DrwaingChair.025
+    2300128: DrwaingChair.026
+    2300130: DrwaingChair.027
+    2300132: DrwaingChair.028
+    2300134: DrwaingChair.029
+    2300136: DrwaingChair.030
+    2300138: DrwaingChair.031
+    2300140: Floor 2.002
+    2300142: Floor 2.003
+    2300144: Floor 2.004
+    2300146: Kharsana Roof
+    2300148: Kharsana Stairs
+    2300150: Kharsana Stairs Hand
+    2300152: Kharsana Stairs Wall
+    2300154: LightSet.025
+    2300156: LightSet.026
+    2300158: LightSet.027
+    2300160: LightSet.028
+    2300162: LightSet.029
+    2300164: LightSet.030
+    2300166: LightSet.031
+    2300168: LightSet.032
+    2300170: LightSet.033
+    2300172: LightSet.034
+    2300174: LightSet.035
+    2300176: LightSet.036
+    2300178: MegaWall
+    2300180: MegaWall2
+    2300182: MegaWindowFrame
+    2300184: MegaWindowFrame.001
+    2300186: MegaWindowFrame.002
+    2300188: MegaWindowFrame.003
+    2300190: MegaWindowFrame.004
+    2300192: MegaWindowFrame.005
+    2300194: MegaWindowFrame.006
+    2300196: MegaWindowFrame.007
+    2300198: MegaWindowFrame.008
+    2300200: MegaWindowFrame.009
+    2300202: MegaWindowFrame.010
+    2300204: MegaWindowFrame.011
+    2300206: MegaWindowGrid
+    2300208: MegaWindowGrid.001
+    2300210: MegaWindowGrid.002
+    2300212: MegaWindowGrid.003
+    2300214: MegaWindowGrid.004
+    2300216: MegaWindowGrid.005
+    2300218: MegaWindowGrid.006
+    2300220: MegaWindowGrid.007
+    2300222: MegaWindowLeft
+    2300224: MegaWindowLeft.001
+    2300226: MegaWindowLeft.002
+    2300228: MegaWindowLeft.003
+    2300230: MegaWindowLeft.004
+    2300232: MegaWindowLeft.005
+    2300234: MegaWindowLeft.006
+    2300236: MegaWindowLeft.007
+    2300238: MegaWindowLeft.008
+    2300240: MegaWindowLeft.009
+    2300242: MegaWindowLeft.010
+    2300244: MegaWindowLeft.011
+    2300246: MegaWindowRight
+    2300248: MegaWindowRight.001
+    2300250: MegaWindowRight.002
+    2300252: MegaWindowRight.003
+    2300254: MegaWindowRight.004
+    2300256: MegaWindowRight.005
+    2300258: MegaWindowRight.006
+    2300260: MegaWindowRight.007
+    2300262: MegaWindowRight.008
+    2300264: MegaWindowRight.009
+    2300266: MegaWindowRight.010
+    2300268: MegaWindowRight.011
+    2300270: mid extend
+    2300272: Roof 1.004
+    2300274: Roof 1.005
+    2300276: stair_Window bottom.001
+    2300278: stair_Window top.001
+    2300280: WhiteBoard
+    2300282: WhiteBoard.001
+    3300000: Door11_Frame.015
+    3300002: Door11_Left.010
+    3300004: Door11_Right.019
+    3300006: Drawing Roof
+    3300008: DrawingMiniTable
+    3300010: DrawingMiniTable.001
+    3300012: DrawingMiniTable.002
+    3300014: DrawingMiniTable.003
+    3300016: DrawingMiniTable.004
+    3300018: DrawingMiniTable.005
+    3300020: DrawingMiniTable.006
+    3300022: DrawingMiniTable.007
+    3300024: DrawingMiniTable.008
+    3300026: DrawingMiniTable.009
+    3300028: DrawingMiniTable.010
+    3300030: DrawingMiniTable.011
+    3300032: DrawingMiniTable.012
+    3300034: DrawingMiniTable.013
+    3300036: DrawingMiniTable.014
+    3300038: DrawingMiniTable.015
+    3300040: DrawingMiniTable.016
+    3300042: DrawingMiniTable.017
+    3300044: DrawingMiniTable.018
+    3300046: DrawingMiniTable.019
+    3300048: DrawingMiniTable.020
+    3300050: DrawingMiniTable.021
+    3300052: DrawingMiniTable.022
+    3300054: DrawingMiniTable.023
+    3300056: DrawingMiniTable.024
+    3300058: DrawingMiniTable.025
+    3300060: DrawingMiniTable.026
+    3300062: DrawingMiniTable.027
+    3300064: DrawingMiniTable.028
+    3300066: DrawingMiniTable.029
+    3300068: DrawingMiniTable.030
+    3300070: DrawingMiniTable.031
+    3300072: DrawingTable
+    3300074: DrawingWall
+    3300076: DrwaingChair
+    3300078: DrwaingChair.001
+    3300080: DrwaingChair.002
+    3300082: DrwaingChair.003
+    3300084: DrwaingChair.004
+    3300086: DrwaingChair.005
+    3300088: DrwaingChair.006
+    3300090: DrwaingChair.007
+    3300092: DrwaingChair.008
+    3300094: DrwaingChair.009
+    3300096: DrwaingChair.010
+    3300098: DrwaingChair.011
+    3300100: DrwaingChair.012
+    3300102: DrwaingChair.013
+    3300104: DrwaingChair.014
+    3300106: DrwaingChair.015
+    3300108: DrwaingChair.016
+    3300110: DrwaingChair.017
+    3300112: DrwaingChair.018
+    3300114: DrwaingChair.019
+    3300116: DrwaingChair.020
+    3300118: DrwaingChair.021
+    3300120: DrwaingChair.022
+    3300122: DrwaingChair.023
+    3300124: DrwaingChair.024
+    3300126: DrwaingChair.025
+    3300128: DrwaingChair.026
+    3300130: DrwaingChair.027
+    3300132: DrwaingChair.028
+    3300134: DrwaingChair.029
+    3300136: DrwaingChair.030
+    3300138: DrwaingChair.031
+    3300140: Floor 2.002
+    3300142: Floor 2.003
+    3300144: Floor 2.004
+    3300146: Kharsana Roof
+    3300148: Kharsana Stairs
+    3300150: Kharsana Stairs Hand
+    3300152: Kharsana Stairs Wall
+    3300154: LightSet.025
+    3300156: LightSet.026
+    3300158: LightSet.027
+    3300160: LightSet.028
+    3300162: LightSet.029
+    3300164: LightSet.030
+    3300166: LightSet.031
+    3300168: LightSet.032
+    3300170: LightSet.033
+    3300172: LightSet.034
+    3300174: LightSet.035
+    3300176: LightSet.036
+    3300178: MegaWall
+    3300180: MegaWall2
+    3300182: MegaWindowFrame
+    3300184: MegaWindowFrame.001
+    3300186: MegaWindowFrame.002
+    3300188: MegaWindowFrame.003
+    3300190: MegaWindowFrame.004
+    3300192: MegaWindowFrame.005
+    3300194: MegaWindowFrame.006
+    3300196: MegaWindowFrame.007
+    3300198: MegaWindowFrame.008
+    3300200: MegaWindowFrame.009
+    3300202: MegaWindowFrame.010
+    3300204: MegaWindowFrame.011
+    3300206: MegaWindowGrid
+    3300208: MegaWindowGrid.001
+    3300210: MegaWindowGrid.002
+    3300212: MegaWindowGrid.003
+    3300214: MegaWindowGrid.004
+    3300216: MegaWindowGrid.005
+    3300218: MegaWindowGrid.006
+    3300220: MegaWindowGrid.007
+    3300222: MegaWindowLeft
+    3300224: MegaWindowLeft.001
+    3300226: MegaWindowLeft.002
+    3300228: MegaWindowLeft.003
+    3300230: MegaWindowLeft.004
+    3300232: MegaWindowLeft.005
+    3300234: MegaWindowLeft.006
+    3300236: MegaWindowLeft.007
+    3300238: MegaWindowLeft.008
+    3300240: MegaWindowLeft.009
+    3300242: MegaWindowLeft.010
+    3300244: MegaWindowLeft.011
+    3300246: MegaWindowRight
+    3300248: MegaWindowRight.001
+    3300250: MegaWindowRight.002
+    3300252: MegaWindowRight.003
+    3300254: MegaWindowRight.004
+    3300256: MegaWindowRight.005
+    3300258: MegaWindowRight.006
+    3300260: MegaWindowRight.007
+    3300262: MegaWindowRight.008
+    3300264: MegaWindowRight.009
+    3300266: MegaWindowRight.010
+    3300268: MegaWindowRight.011
+    3300270: mid extend
+    3300272: Roof 1.004
+    3300274: Roof 1.005
+    3300276: stair_Window bottom.001
+    3300278: stair_Window top.001
+    3300280: WhiteBoard
+    3300282: WhiteBoard.001
+    4300000: Kharsana Roof
+    4300002: LightSet.036
+    4300004: Drawing Roof
+    4300006: DrawingMiniTable.031
+    4300008: DrwaingChair.031
+    4300010: Door11_Frame.015
+    4300012: Door11_Left.010
+    4300014: Door11_Right.019
+    4300016: DrawingTable
+    4300018: WhiteBoard.001
+    4300020: WhiteBoard
+    4300022: MegaWindowFrame.011
+    4300024: MegaWindowRight.011
+    4300026: MegaWindowLeft.011
+    4300028: MegaWindowLeft.010
+    4300030: MegaWindowRight.010
+    4300032: MegaWindowFrame.010
+    4300034: MegaWindowFrame.009
+    4300036: MegaWindowRight.009
+    4300038: MegaWindowLeft.009
+    4300040: MegaWindowLeft.008
+    4300042: MegaWindowRight.008
+    4300044: MegaWindowFrame.008
+    4300046: Floor 2.004
+    4300048: stair_Window bottom.001
+    4300050: stair_Window top.001
+    4300052: Kharsana Stairs
+    4300054: Kharsana Stairs Hand
+    4300056: LightSet.030
+    4300058: LightSet.029
+    4300060: LightSet.028
+    4300062: LightSet.027
+    4300064: LightSet.026
+    4300066: LightSet.025
+    4300068: MegaWindowFrame.007
+    4300070: MegaWindowRight.007
+    4300072: MegaWindowLeft.007
+    4300074: MegaWindowGrid.007
+    4300076: MegaWindowGrid.006
+    4300078: MegaWindowLeft.006
+    4300080: MegaWindowRight.006
+    4300082: MegaWindowFrame.006
+    4300084: MegaWindowFrame.005
+    4300086: MegaWindowRight.005
+    4300088: MegaWindowLeft.005
+    4300090: MegaWindowGrid.005
+    4300092: MegaWindowGrid.004
+    4300094: MegaWindowLeft.004
+    4300096: MegaWindowRight.004
+    4300098: MegaWindowFrame.004
+    4300100: MegaWindowFrame.003
+    4300102: MegaWindowRight.003
+    4300104: MegaWindowLeft.003
+    4300106: MegaWindowGrid.003
+    4300108: MegaWindowGrid.002
+    4300110: MegaWindowLeft.002
+    4300112: MegaWindowRight.002
+    4300114: MegaWindowFrame.002
+    4300116: MegaWindowFrame.001
+    4300118: MegaWindowRight.001
+    4300120: MegaWindowLeft.001
+    4300122: MegaWindowGrid.001
+    4300124: MegaWindowGrid
+    4300126: MegaWindowLeft
+    4300128: MegaWindowRight
+    4300130: MegaWindowFrame
+    4300132: Floor 2.003
+    4300134: Roof 1.005
+    4300136: Roof 1.004
+    4300138: Floor 2.002
+    4300140: mid extend
+    4300142: Kharsana Stairs Wall
+    4300144: DrawingWall
+    4300146: MegaWall2
+    4300148: MegaWall
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blackironwall
+    second: {fileID: 2100000, guid: 13313bec2031b704d9574f84f8237350, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door Dark
+    second: {fileID: 2100000, guid: 897b841cfa63b5a46b5d6d6e96834130, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DrawingFloorMarbel
+    second: {fileID: 2100000, guid: 5256b4cfaa498e94b8028ca83660406e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DrawingMarbel
+    second: {fileID: 2100000, guid: fd43aaf0fbd69f64cb74abcc2f8d1cde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DrwaingBoard
+    second: {fileID: 2100000, guid: 88815077c0fc8e246a0024fc6a685849, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 293ab46c3e8ceba43a0f5716b181653b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor 1
+    second: {fileID: 2100000, guid: 293ab46c3e8ceba43a0f5716b181653b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LedFrame
+    second: {fileID: 2100000, guid: af466594942659c44970b1b59b28e659, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light
+    second: {fileID: 2100000, guid: 7d61e93aeb414a34dbf8d99cfd50af79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stairs hand
+    second: {fileID: 2100000, guid: ac4c5b8fdc2c58c4b84ef37aecd5311e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Table
+    second: {fileID: 2100000, guid: 43b6373308244244993b7a8c7930410d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: 30d82994504c72c4eb333b9e993f6ec6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100034, guid: 6782b9f8d6cf5924a895f7f929879ae3, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_Glass.001
+    second: {fileID: 2100000, guid: 5ce5e1c154fffac48b9154547c1f7494, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_MetalFrame
+    second: {fileID: 2100000, guid: 5ce5e1c154fffac48b9154547c1f7494, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windowwood
+    second: {fileID: 2100000, guid: b1970fc1f24bdd847b84badf1c84d057, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whiteironwall
+    second: {fileID: 2100000, guid: 77f59d5f608ae8647abbe6d223eb0e69, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
