@@ -11,14 +11,23 @@ public class CharacterAnimationTransition : MonoBehaviour {
     public bool typing = false;
     public bool talking = false;
     float speed;
+
+    GameObject textbackPanel; 
+
     private void Start()
     {
         anim = GetComponent<Animator>();
         navMesh = GetComponent<NavMeshAgent>();
+
+        // text panel
+        textbackPanel = GameObject.FindGameObjectWithTag("txtback");
+        
     }
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        
+        // disable movement when dialogue panel is active
+        if (Input.GetButtonDown("Fire1") && textbackPanel.transform.GetChild(0).gameObject.activeSelf==false)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
