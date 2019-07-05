@@ -27,6 +27,12 @@ TagManager:
   - myMain
   - myFor
   - Neck
+  - helpbuttom
+  - gameover
+  - help
+  - exitbutton
+  - Resistance Lab
+  - Logic Lab
   layers:
   - Default
   - TransparentFX

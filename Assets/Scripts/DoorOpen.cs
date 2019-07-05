@@ -21,7 +21,7 @@ public class DoorOpen : MonoBehaviour
     private void Update()
     {
         /*Debug.Log(body.velocity);*/
-        Debug.Log(transform.gameObject.name + " : " + (transform.eulerAngles.y > 180? new Vector3(0,180,0) - transform.eulerAngles:transform.eulerAngles));
+        //Debug.Log(transform.gameObject.name + " : " + (transform.eulerAngles.y > 180? new Vector3(0,180,0) - transform.eulerAngles:transform.eulerAngles));
         float zAngle = transform.eulerAngles.y;
         if(zAngle > 180)
         {

@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Logic Game/Levels/Logic Gates 6.unity
     guid: 7cd50d9cebfeb6042ba3f2150688a0c0
+  - enabled: 1
+    path: Assets/ResistanceGame/Scenes/ResistanceGame.unity
+    guid: 3d35367122d4c64499be179989344e53
+  - enabled: 1
+    path: Assets/Blockeys/Scenes/Blockeys.unity
+    guid: 45e450ff1e7b36149926b1b49050d4b7
   m_configObjects: {}

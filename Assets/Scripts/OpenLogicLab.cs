@@ -24,7 +24,17 @@ public class OpenLogicLab : MonoBehaviour
     }
 
     private void OnMouseDown()
-    {
-        SceneManager.LoadScene("Logic Gates 0");
+    {   if (gameObject.tag == "Logic Lab")
+        {
+            SceneManager.LoadScene("Logic Gates 0");
+        }
+    else if (gameObject.tag =="Resistance Lab")
+        {
+            SceneManager.LoadScene("ResistanceGame");
+        }
+        else if (gameObject.tag =="Blockeys Lab")
+        {   
+            SceneManager.LoadScene("Blockeys");
+        }
     }
 }
