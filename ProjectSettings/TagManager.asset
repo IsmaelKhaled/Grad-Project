@@ -33,6 +33,7 @@ TagManager:
   - exitbutton
   - Resistance Lab
   - Logic Lab
+  - Blockeys Lab
   layers:
   - Default
   - TransparentFX
