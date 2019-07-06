@@ -81,6 +81,18 @@ MonoBehaviour:
   MaxAngle: -115
   MinAngle: -179.5
   Locked: 0
+--- !u!114 &268940909970885524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134274181636640744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d812edd64d3a146afb3603d22b72fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &6543393384293989406
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -162,6 +174,18 @@ MonoBehaviour:
   MaxAngle: 85
   MinAngle: 0.5
   Locked: 0
+--- !u!114 &2395770299469194207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134274181636640746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d812edd64d3a146afb3603d22b72fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1134274181636640750
 GameObject:
   m_ObjectHideFlags: 0

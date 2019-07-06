@@ -14,6 +14,8 @@ public class OpenMainScene : MonoBehaviour
     // Update is called once per frame
     public void LoadNewScene()
     {
-        SceneManager.LoadScene("SampleScene");
+
+        SceneManager.LoadSceneAsync("SampleScene");
     }
+    
 }

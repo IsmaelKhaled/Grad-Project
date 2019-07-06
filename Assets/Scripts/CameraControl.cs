@@ -33,7 +33,7 @@ public class CameraControl : MonoBehaviour // For the collision detection to wor
     {
         if (target)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(1))
             {
                 velocityX += xSpeed * Input.GetAxis("Mouse X") * distance * 0.02f; //getaxis gives float negative values for right rotations and positive for left
                 velocityY += ySpeed * Input.GetAxis("Mouse Y") * 0.02f; 
@@ -45,7 +45,8 @@ public class CameraControl : MonoBehaviour // For the collision detection to wor
             Quaternion toRotation = Quaternion.Euler(rotationXAxis, rotationYAxis, 0);
             Quaternion rotation = toRotation;
 
-            distance = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distanceMin, distanceMax); // use scroll wheel to change distance from target
+            float di = Mathf.Clamp(distance - Input.GetAxis("Mouse ScrollWheel") * 5, distanceMin, distanceMax); // use scroll wheel to change distance from target
+            distance = Mathf.Lerp(distance, di, (di - distance / 10));
             RaycastHit hit;
             if (Physics.Linecast(target.position, transform.position, out hit)) // check for obstructions in the view and move the camera closer to target if obstructions found
             {

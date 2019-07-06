@@ -64,7 +64,7 @@ public class LevelCtrl : MonoBehaviour
                     fullyConnected = false;
             }
         Debug.Log("Fully connected =" + fullyConnected +". Coroutine =" + coroutineStarted);
-        if (!coroutineStarted && fullyConnected)
+        if (!coroutineStarted && fullyConnected && (scene.name == "Logic Gates 6" || scene.name == "Logic Gates 5") )
             StartCoroutine(Level1Complete(currentScene));
     }
 
@@ -279,10 +279,15 @@ public class LevelCtrl : MonoBehaviour
     }
     IEnumerator Fading()
     {
+
         anim.Play("Fade out");
         yield return new WaitForSeconds(1f);
-        int currentScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentScene + 1);
+        int currentScene = int.Parse(SceneManager.GetActiveScene().name.Substring(scene.name.IndexOf('s')+2));
+        Debug.Log(currentScene);
+        if (currentScene != 6)
+            SceneManager.LoadScene("Logic Gates " + (currentScene+1));
+        else
+            SceneManager.LoadScene(0);
     }
     IEnumerator Help()
     {
