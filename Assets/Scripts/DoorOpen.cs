@@ -33,6 +33,10 @@ public class DoorOpen : MonoBehaviour
         {
             body.angularVelocity = Vector3.zero;
             body.velocity = Vector3.zero;
+            
+            /*zAngle = Mathf.Clamp(zAngle, MinAngle, MaxAngle);
+            zAngle = zAngle < 0 ? 360 + zAngle : zAngle;
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, zAngle, transform.eulerAngles.z);*/
         }
         
     }
