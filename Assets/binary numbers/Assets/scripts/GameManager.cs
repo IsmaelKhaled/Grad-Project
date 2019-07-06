@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
     bool illuminate = false;
     float alpha = 0f;
 
-    public GameObject elnormakano;
     public AudioSource src;
 
     [SerializeField]
@@ -83,7 +82,6 @@ public class GameManager : MonoBehaviour
 
     void EndGame ()
     {
-        elnormakano.AddComponent<AudioSource>().Play();
         panel.SetActive(true);
     }
 

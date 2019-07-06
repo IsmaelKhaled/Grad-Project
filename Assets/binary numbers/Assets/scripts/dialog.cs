@@ -40,7 +40,7 @@ public class dialog : MonoBehaviour
                           "for example: the number  80",
                           "is in fact 64 + 4 +2" ,
                           "so if we activate the second, the third and the seventh leds",
-                          "now we can see clearly" };
+                          "now we can see clearly!" };
     // Start is called before the first frame update
     void Start()
     {
@@ -74,8 +74,8 @@ public class dialog : MonoBehaviour
             if (fading_co >= fading_time / FrmRate)
             {
                 fading_co -= fading_time / FrmRate;
-                txt1.color = new Color((217f / 255f), 34f / 255f, 47f / 255f, fading_co);
-                txt2.color = new Color((217f / 255f), 34f / 255f, 47f / 255f, fading_co);
+                txt1.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
+                txt2.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
             }
             else
             {
@@ -92,8 +92,8 @@ public class dialog : MonoBehaviour
             if (fading_co <= 1-(fading_time / FrmRate))
             {
                 fading_co += fading_time / FrmRate;
-                txt1.color = new Color((217f / 255f), 34f / 255f, 47f / 255f, fading_co);
-                txt2.color = new Color((217f / 255f), 34f / 255f, 47f / 255f, fading_co);
+                txt1.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
+                txt2.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
             }
             else
             {
@@ -134,9 +134,9 @@ public class dialog : MonoBehaviour
         }
         if (index == 6)
         {
-            txt1.rectTransform.sizeDelta = new Vector2(160f, 34.88f);
+            txt1.rectTransform.sizeDelta = new Vector2(160f, 40.5f);
             txt2.rectTransform.sizeDelta = new Vector2(160f, 46.06f);
-            txt1.transform.localScale = new Vector3(1.745325f, 2.68f, 2.0533f);
+            txt1.transform.localScale = new Vector3(1.745325f, 2.23f, 2.0533f);
             txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);
             txt1.text = sentences[index];
             txt2.text = sentences[index + 1];
