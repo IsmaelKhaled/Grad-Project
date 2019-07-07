@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour {
         
         nametxt.text = dialogue.name;
         panelnum = dialogue.panelindex;
-        panelTag = dialogue.panelName;
+        panelTag = dialogue.panelTagname;
         buttonsCount = dialogue.buttonsCount;
 
         //show text back
@@ -130,6 +130,10 @@ public class DialogueManager : MonoBehaviour {
 
     public void exitConv()
     {
+        //stop typing and sound
+        StopAllCoroutines();
+        typing.Stop();
+        
         // hide exit button 
         GameObject exitPanel = GameObject.FindGameObjectWithTag("exit");
         exitPanel.transform.GetChild(0).gameObject.SetActive(false);

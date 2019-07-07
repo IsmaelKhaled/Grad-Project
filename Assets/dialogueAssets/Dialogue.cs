@@ -8,7 +8,7 @@ public class Dialogue  {
 
     public string name;
     public int panelindex;
-    public string panelName;
+    public string panelTagname;
 
     [TextArea(3,10)]
     public string[] sentences;
