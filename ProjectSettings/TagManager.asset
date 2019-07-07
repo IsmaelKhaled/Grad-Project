@@ -35,6 +35,7 @@ TagManager:
   - Logic Lab
   - Blockeys Lab
   - logicstart
+  - resitstart
   layers:
   - Default
   - TransparentFX

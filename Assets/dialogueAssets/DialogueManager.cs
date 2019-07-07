@@ -7,10 +7,10 @@ public class DialogueManager : MonoBehaviour {
     public Text nametxt;
     public Text dialoguetxt;
 
-    public int numofpanels;
+    //public int numofpanels;
 
     private Queue<string> sentences;
-    private int buttonsCount; //num of buttons in certain panel
+    //private int buttonsCount; //num of buttons in certain panel
     private int panelnum; //panel child index
     private string panelTag;   //panel Tag
 
@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour {
         nametxt.text = dialogue.name;
         panelnum = dialogue.panelindex;
         panelTag = dialogue.panelTagname;
-        buttonsCount = dialogue.buttonsCount;
+        //buttonsCount = dialogue.buttonsCount;
 
         //show text back
         GameObject textbackPanel = GameObject.FindGameObjectWithTag("txtback");
@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour {
         // hide all panels 
         GameObject mainPanel = GameObject.FindGameObjectWithTag("mainTag");
 
-        for (int i = 0; i < numofpanels;i++ )
+        for (int i = 0; i < mainPanel.transform.childCount;i++ )
         {   
             mainPanel.transform.GetChild(i).gameObject.SetActive(false);
         }
@@ -117,7 +117,7 @@ public class DialogueManager : MonoBehaviour {
 
         GameObject wantedPanel = GameObject.FindGameObjectWithTag(panelTag);
 
-        for (int i = 0; i < buttonsCount; i++)
+        for (int i = 0; i < wantedPanel.transform.childCount; i++)
         {
             wantedPanel.transform.GetChild(i).gameObject.SetActive(true);
         }
@@ -145,7 +145,7 @@ public class DialogueManager : MonoBehaviour {
         // hide all panels 
         GameObject mainPanel = GameObject.FindGameObjectWithTag("mainTag");
 
-        for (int i = 0; i < numofpanels; i++)
+        for (int i = 0; i < mainPanel.transform.childCount; i++)
         {
             mainPanel.transform.GetChild(i).gameObject.SetActive(false);
         }
