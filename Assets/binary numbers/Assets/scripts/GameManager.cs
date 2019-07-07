@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] electricity;
     public GameObject illumination;
+    
 
     bool illuminate = false;
     float alpha = 0f;
@@ -31,7 +32,8 @@ public class GameManager : MonoBehaviour
     {
         electricity[0].SetActive(false); electricity[1].SetActive(false);
         panel.SetActive(false);
-       // RandomNumber = Random.Range(0, 1024);
+        
+        // RandomNumber = Random.Range(0, 1024);
         //number.text = "" + RandomNumber;
     }
 
