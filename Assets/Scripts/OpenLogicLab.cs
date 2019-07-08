@@ -8,23 +8,25 @@ public class OpenLogicLab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
 
     void position_save()
     {
-        PlayerPrefs.SetFloat("p_x", GameObject.Find("Mprotagnist").transform.position.x);
-        PlayerPrefs.SetFloat("p_y", GameObject.Find("Mprotagnist").transform.position.y);
-        PlayerPrefs.SetFloat("p_z", GameObject.Find("Mprotagnist").transform.position.z);
+        PlayerPrefs.SetFloat("p_x", GameObject.Find("MProtagnist").transform.localPosition.x);
+        PlayerPrefs.SetFloat("p_y", GameObject.Find("MProtagnist").transform.localPosition.y);
+        PlayerPrefs.SetFloat("p_z", GameObject.Find("MProtagnist").transform.localPosition.z);
 
         PlayerPrefs.SetInt("Saved", 1);
         // You need to actually save the values!
         PlayerPrefs.Save();
+        Debug.Log("Saved position at: " + PlayerPrefs.GetFloat("p_x"));
     }
 
     private void OnMouseDown()
-    {   if (gameObject.tag == "Logic Lab")
+    {
+        position_save();
+        if (gameObject.tag == "Logic Lab")
         {
             SceneManager.LoadScene("Logic Gates 0");
         }
