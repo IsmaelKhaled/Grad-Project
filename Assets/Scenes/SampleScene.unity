@@ -12415,7 +12415,7 @@ MonoBehaviour:
   - {fileID: 1061163064}
   - {fileID: 2051005915}
   - {fileID: 137332296}
-  MaxSpawnedNpc: 100
+  MaxSpawnedNpc: 50
   SpawnRate: 0.2
 --- !u!4 &212710003
 Transform:
@@ -27210,6 +27210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195276098108813046, guid: 3662be179d8d66c41996964487fe2e9a,
+        type: 3}
+      propertyPath: m_Speed
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3662be179d8d66c41996964487fe2e9a, type: 3}
