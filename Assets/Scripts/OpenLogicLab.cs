@@ -14,9 +14,9 @@ public class OpenLogicLab : MonoBehaviour
 
     void position_save()
     {
-        PlayerPrefs.SetFloat("p_x", GameObject.Find("Mprotagnist").transform.position.x);
-        PlayerPrefs.SetFloat("p_y", GameObject.Find("Mprotagnist").transform.position.y);
-        PlayerPrefs.SetFloat("p_z", GameObject.Find("Mprotagnist").transform.position.z);
+        PlayerPrefs.SetFloat("p_x", GameObject.Find("MProtagnist").transform.position.x);
+        PlayerPrefs.SetFloat("p_y", GameObject.Find("MProtagnist").transform.position.y);
+        PlayerPrefs.SetFloat("p_z", GameObject.Find("MProtagnist").transform.position.z);
 
         PlayerPrefs.SetInt("Saved", 1);
         // You need to actually save the values!
@@ -30,11 +30,15 @@ public class OpenLogicLab : MonoBehaviour
         {
             SceneManager.LoadScene("Logic Gates 0");
         }
-    else if (gameObject.tag =="Resistance Lab")
+        else if (gameObject.tag =="Resistance Lab")
         {
             SceneManager.LoadScene("ResistanceGame");
         }
         else if (gameObject.tag =="Blockeys Lab")
+        {   
+            SceneManager.LoadScene("Blockeys");
+        }
+        else if (gameObject.tag =="Binary Lab")
         {   
             SceneManager.LoadScene("Blockeys");
         }

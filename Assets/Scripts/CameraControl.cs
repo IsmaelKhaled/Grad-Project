@@ -51,7 +51,7 @@ public class CameraControl : MonoBehaviour // For the collision detection to wor
             if (Physics.Linecast(target.position, transform.position, out hit)) // check for obstructions in the view and move the camera closer to target if obstructions found
             {
                 //casts a line from target to camera, if any target is hit then the camera moves closer to target exactly 1 unit behind the obstacle
-                Debug.Log("Current distance = " + distance + ", Hit Distance = " + hit.distance);
+               // Debug.Log("Current distance = " + distance + ", Hit Distance = " + hit.distance);
                 distance = Mathf.Lerp(distance,hit.distance - 1f, 3f * Time.deltaTime); //1 is the distance I want the camera to be from the object after moving,..
                 //.. 3 is the speed the camera closes in into the target when it detects an object in the way, both can be edited
             }
