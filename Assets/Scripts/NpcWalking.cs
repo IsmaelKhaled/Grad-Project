@@ -15,10 +15,10 @@ public class NpcWalking : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.stoppingDistance = 0.5f;
         gameObject.SetActive(true);
-        agent.speed = UnityEngine.Random.Range(1f, 2f);
-        gameObject.AddComponent<NavMeshObstacle>();
+        agent.speed = UnityEngine.Random.Range(3.5f, 5.5f);
+        /*gameObject.AddComponent<NavMeshObstacle>();
         GetComponent<NavMeshObstacle>().shape = NavMeshObstacleShape.Capsule;
-        GetComponent<NavMeshObstacle>().center = new Vector3(0, 1, 0);
+        GetComponent<NavMeshObstacle>().center = new Vector3(0, 1, 0);*/
         //agent.acceleration = 4;
         //GetComponent<WalkingSound>().enabled = false;
     }
