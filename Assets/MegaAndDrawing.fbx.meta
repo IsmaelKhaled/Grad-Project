@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: 2f4c06a602d17dd449ffc68e55b2c64a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Door11_Right.020
+    100002: Door11_Right.021
+    100004: Floor 2.003
+    100006: //RootNode
+    100008: MegaWall
+    100010: MegaWall2
+    100012: MidWindowFrame.027
+    100014: NegLectFloor
+    100016: Plane.001
+    100018: Plane.002
+    100020: Plane.003
+    100022: Plane.004
+    100024: Plane.005
+    100026: Roof 1.005
+    400000: Door11_Right.020
+    400002: Door11_Right.021
+    400004: Floor 2.003
+    400006: //RootNode
+    400008: MegaWall
+    400010: MegaWall2
+    400012: MidWindowFrame.027
+    400014: NegLectFloor
+    400016: Plane.001
+    400018: Plane.002
+    400020: Plane.003
+    400022: Plane.004
+    400024: Plane.005
+    400026: Roof 1.005
+    2100000: LapBody1
+    2100002: MousePad
+    2100004: Notch
+    2100006: zuko
+    2100008: TheAvatar
+    2100010: LapScreen
+    2100012: LapBody2
+    2100014: LabBody3
+    2100016: Floor 1
+    2100018: Light Wood
+    2100020: Floor
+    2100022: Wall Brown
+    2100024: Wall Yellow
+    2100026: Wall
+    2100028: DrawingMarbel
+    2300000: Door11_Right.020
+    2300002: Door11_Right.021
+    2300004: Floor 2.003
+    2300006: MegaWall
+    2300008: MegaWall2
+    2300010: MidWindowFrame.027
+    2300012: NegLectFloor
+    2300014: Plane.001
+    2300016: Plane.002
+    2300018: Plane.003
+    2300020: Plane.004
+    2300022: Plane.005
+    2300024: Roof 1.005
+    3300000: Door11_Right.020
+    3300002: Door11_Right.021
+    3300004: Floor 2.003
+    3300006: MegaWall
+    3300008: MegaWall2
+    3300010: MidWindowFrame.027
+    3300012: NegLectFloor
+    3300014: Plane.001
+    3300016: Plane.002
+    3300018: Plane.003
+    3300020: Plane.004
+    3300022: Plane.005
+    3300024: Roof 1.005
+    4300000: Plane.004
+    4300002: Plane.003
+    4300004: Plane.002
+    4300006: Plane.001
+    4300008: Plane.005
+    4300010: NegLectFloor
+    4300012: MidWindowFrame.027
+    4300014: Door11_Right.021
+    4300016: Door11_Right.020
+    4300018: Floor 2.003
+    4300020: Roof 1.005
+    4300022: MegaWall2
+    4300024: MegaWall
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DrawingMarbel
+    second: {fileID: 2100000, guid: fd43aaf0fbd69f64cb74abcc2f8d1cde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 293ab46c3e8ceba43a0f5716b181653b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor 1
+    second: {fileID: 2100038, guid: 6782b9f8d6cf5924a895f7f929879ae3, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LabBody3
+    second: {fileID: 2100000, guid: 92f5dc23c7294c144bc24a066b4bfdde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LapBody1
+    second: {fileID: 2100000, guid: 40fa73cb950477744b252b59c539b198, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LapBody2
+    second: {fileID: 2100000, guid: 805199e4bacf5bf49a52d8951a799641, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LapScreen
+    second: {fileID: 2100000, guid: 714277d2f4c018f419509a435450267f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Wood
+    second: {fileID: 2100000, guid: 1b57a551d1eb15440ba550d9c2f3a221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MousePad
+    second: {fileID: 2100000, guid: 4c7a5d2d90903224c9d3025cb150d324, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Notch
+    second: {fileID: 2100000, guid: 89fd292f1807f65468b87af12c22021f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TheAvatar
+    second: {fileID: 2100000, guid: b0e9853caafa8014191150f29f98c271, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: 30d82994504c72c4eb333b9e993f6ec6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall Brown
+    second: {fileID: 2100000, guid: 94d8aa93d9cea7742b17bf32159cde7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall Yellow
+    second: {fileID: 2100000, guid: f72f386b9576d1a4c8b766d9b82e3a0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zuko
+    second: {fileID: 2100000, guid: bd531f0559955894ca37ba8b49252c17, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
