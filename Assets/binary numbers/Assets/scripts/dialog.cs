@@ -41,7 +41,7 @@ public class dialog : MonoBehaviour
                           "one of them is to see what is the powers of  2  this decimal consists of ",
                           "for example: the number  80",
                           "is in fact 64 + 16" ,
-                          "so if we activate the second, the third and the seventh leds",
+                          "so if we activate the fifth and the seventh leds",
                           "now we can see clearly!" };
     // Start is called before the first frame update
     void Start()
