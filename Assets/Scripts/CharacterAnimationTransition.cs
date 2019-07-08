@@ -27,14 +27,14 @@ public class CharacterAnimationTransition : MonoBehaviour {
     {
         
         // disable movement when dialogue panel is active
-        if (Input.GetButtonDown("Fire1") && textbackPanel.transform.GetChild(0).gameObject.activeSelf==false)
+        if (Input.GetButtonDown("Fire1") && textbackPanel.transform.GetChild(0).gameObject.activeSelf==false && tag == "Player")
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
 
             if (Physics.Raycast(ray, out hitInfo))
             {
-                GetComponent<NavMeshAgent>().SetDestination(hitInfo.point);
+                navMesh.SetDestination(hitInfo.point);
               
             }
         }
