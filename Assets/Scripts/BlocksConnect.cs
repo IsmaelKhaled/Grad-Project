@@ -21,6 +21,7 @@ public class Block
 
 public class BlocksConnect : MonoBehaviour
 {
+    public Vector3 blockposition;
     public Vector3 myCollider;
     public int extensions = 1;
     public GameObject tembo;
@@ -107,19 +108,22 @@ public class BlocksConnect : MonoBehaviour
                             targetObj = target;
                             
                         }
-                        if (target.tag == "variable")
-                        {if (gameObject.tag == "myMain")
-                            {
-                                analyzeBlock(ParentBlock);
-                            }
-                            Debug.Log("This is a variable");
-                            execute();
-                        }
+                       
                     }
                 }
             }
         }
     }
+
+    public void ExcecuteMain()
+    {
+        if (gameObject.tag == "myMain")
+        {
+            analyzeBlock(ParentBlock);
+        }
+        execute();
+    }
+
     void submittask()
     {
         submit.gameObject.SetActive(false);
@@ -218,6 +222,9 @@ public class BlocksConnect : MonoBehaviour
                     collidingObject.transform.position = new Vector3(1.550f, gameObject.transform.position.y - (myCollider.y * 160 *extensions), -1);
                     collidingObject.GetComponent<BoxCollider>().enabled = (false);
                     extensions = extensions + 1;
+                    GameObject gO = Instantiate(collidingObject, BlockMovement.blockoldposition, transform.rotation * Quaternion.Euler(180f, 180f, 180f)) as GameObject;
+                    gO.name = collidingObject.name;
+                    gO.GetComponent<BoxCollider>().enabled = true;
 
                     if (ParentBlock.myBlock.tag == "myMain")
                     {
@@ -333,7 +340,9 @@ public class BlocksConnect : MonoBehaviour
                     myCollider = new Vector3(gameObject.GetComponents<BoxCollider>()[0].center.x, gameObject.GetComponents<BoxCollider>()[0].center.y, gameObject.GetComponents<BoxCollider>()[0].center.z - 0.005f);
                     collidingObject.transform.position = new Vector3(2.07f, gameObject.transform.position.y - (myCollider.y * 230 * extensions)    , -1);
                     collidingObject.GetComponent<BoxCollider>().enabled = (false);
-
+                    GameObject gO = Instantiate(collidingObject, BlockMovement.blockoldposition, transform.rotation * Quaternion.Euler(180f, 180f, 180f)) as GameObject;
+                    gO.name = collidingObject.name;
+                    gO.GetComponent<BoxCollider>().enabled = true;
                     extensions = extensions + 1;
                     ParentBlock.Father.myBlock.GetComponent<BlocksConnect>().extensions += 1;
                     traceChildren(ParentBlock, ParentBlock.kidOrder, 1);
@@ -452,42 +461,49 @@ public class BlocksConnect : MonoBehaviour
     }
     public  void MoveLeft()
     {
+        if ((rb.transform.position.x + tempVect.x) < -7.94f)
+        {
 
-         tempVect = new Vector3(-1, 0, 0);
- 
+            tempVect = new Vector3(-1, 0, 0);
 
-        tempVect = tempVect.normalized * speed * Time.deltaTime / 2;
-        rb.MovePosition(rb.transform.position + tempVect);
-        // Can add more complicated logic here
+
+            tempVect = tempVect.normalized * speed * Time.deltaTime / 2.9f;
+            rb.MovePosition(rb.transform.position + tempVect);
+        }   // Can add more complicated logic here}
     }
     public void MoveRight()
     {
         // Can add more complicated logic here
         
+            
+            if((rb.transform.position.x + tempVect.x) < -1.2f){
             tempVect = new Vector3(1, 0, 0);
-            tempVect = tempVect.normalized * speed * Time.deltaTime / 2;
+            tempVect = tempVect.normalized * speed * Time.deltaTime / 3;
             rb.MovePosition(rb.transform.position + tempVect);
-       
+        }
     }
     public  void MoveUp()
     {
-       
- 
 
-         tempVect = new Vector3(0, 1, 0);
+        if ((rb.transform.position.y + tempVect.y) < 3.78f)
+        {
 
-        tempVect = tempVect.normalized * speed * Time.deltaTime / 2;
-        rb.MovePosition(rb.transform.position + tempVect);
+            tempVect = new Vector3(0, 1, 0);
+
+            tempVect = tempVect.normalized * speed * Time.deltaTime / 2.9f;
+            rb.MovePosition(rb.transform.position + tempVect);
+        }
     }
     public void MoveDown()
     {
-       
-        tempVect = new Vector3(0, -1, 0);
+        if ((rb.transform.position.y + tempVect.y) > -1.2f)
+        {
 
-        tempVect = tempVect.normalized * speed * Time.deltaTime / 2;
-        rb.MovePosition(rb.transform.position + tempVect);
-        Debug.Log(tempVect);
-        
+            tempVect = new Vector3(0, -1, 0);
+
+            tempVect = tempVect.normalized * speed * Time.deltaTime / 3;
+            rb.MovePosition(rb.transform.position + tempVect);
+        }
     }
     void IncreaseBy(ref int Target, int Amount)
     {

@@ -37,6 +37,7 @@ TagManager:
   - logicstart
   - resitstart
   - Binary Lab
+  - Theultimatebutton
   layers:
   - Default
   - TransparentFX
