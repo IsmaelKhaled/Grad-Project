@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class dialog : MonoBehaviour
 {
-    public Text txt1;
-    public Text txt2;
+    /*public Text txt1;
+    public Text txt2;*/
+    public TextMeshProUGUI txt1;
+    public TextMeshProUGUI txt2;
     public Text labels;
     public GameManager GM;
     public GameObject next;
@@ -38,7 +40,7 @@ public class dialog : MonoBehaviour
                           "and now there is too many ways to convert decimal to binary",
                           "one of them is to see what is the powers of  2  this decimal consists of ",
                           "for example: the number  80",
-                          "is in fact 64 + 4 +2" ,
+                          "is in fact 64 + 16" ,
                           "so if we activate the second, the third and the seventh leds",
                           "now we can see clearly!" };
     // Start is called before the first frame update
@@ -74,8 +76,12 @@ public class dialog : MonoBehaviour
             if (fading_co >= fading_time / FrmRate)
             {
                 fading_co -= fading_time / FrmRate;
-                txt1.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
-                txt2.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
+                Color color = txt1.color;
+                color.a = fading_co;
+                txt1.color = color;
+                txt2.color = color;
+                /*txt1.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
+                txt2.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);*/
             }
             else
             {
@@ -92,8 +98,12 @@ public class dialog : MonoBehaviour
             if (fading_co <= 1-(fading_time / FrmRate))
             {
                 fading_co += fading_time / FrmRate;
-                txt1.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
-                txt2.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
+                Color color = txt1.color;
+                color.a = fading_co;
+                txt2.color = color;
+                txt1.color = color;
+                /*txt1.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);
+                txt2.color = new Color((180f / 255f), 190f / 255f, 117f / 255f, fading_co);*/
             }
             else
             {
@@ -107,8 +117,8 @@ public class dialog : MonoBehaviour
     {
         if (index == 0)
         {
-            txt1.transform.localScale = new Vector3(1.745325f, 3.6f, 2.0533f);
-            txt2.transform.localScale = new Vector3(1.796679f, 3.6f, 2.0533f);
+            /*txt1.transform.localScale = new Vector3(1.745325f, 3.6f, 2.0533f);
+            txt2.transform.localScale = new Vector3(1.796679f, 3.6f, 2.0533f);*/
             txt1.text = sentences[index];
             txt2.text = sentences[index + 1];
         }
@@ -116,78 +126,78 @@ public class dialog : MonoBehaviour
         if (index == 2)
         {
 
-            txt1.rectTransform.sizeDelta = new Vector2(160f, 40.6f);
+            /*txt1.rectTransform.sizeDelta = new Vector2(160f, 40.6f);
             txt2.rectTransform.sizeDelta = new Vector2(160f, 55.4f);
             //    txt1.transform.localScale = new Vector3(1.745325f, 3.6f, 2.0533f);
-            txt2.transform.localScale = new Vector3(1.6f, 3.6f, 2.0533f);
+            txt2.transform.localScale = new Vector3(1.6f, 3.6f, 2.0533f);*/
             txt1.text = sentences[index];
             txt2.text = sentences[index + 1];
         }
         if (index == 4)
         {
-            txt1.rectTransform.sizeDelta = new Vector2(160f, 61.69f);
+            /*txt1.rectTransform.sizeDelta = new Vector2(160f, 61.69f);
             txt2.rectTransform.sizeDelta = new Vector2(160f, 46.06f);
             txt1.transform.localScale = new Vector3(1.745325f, 2.68f, 2.0533f);
-            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);
+            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);*/
             txt1.text = sentences[index];
             txt2.text = sentences[index + 1];
         }
         if (index == 6)
         {
-            txt1.rectTransform.sizeDelta = new Vector2(160f, 40.5f);
+            /*txt1.rectTransform.sizeDelta = new Vector2(160f, 40.5f);
             txt2.rectTransform.sizeDelta = new Vector2(160f, 46.06f);
             txt1.transform.localScale = new Vector3(1.745325f, 2.23f, 2.0533f);
-            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);
+            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);*/
             txt1.text = sentences[index];
             txt2.text = sentences[index + 1];
         }
         if (index == 8)
         {
-            txt1.rectTransform.sizeDelta = new Vector2(160f, 63.3f);
+            /*txt1.rectTransform.sizeDelta = new Vector2(160f, 63.3f);
             txt2.rectTransform.sizeDelta = new Vector2(160f, 53.82f);
             txt1.transform.localScale = new Vector3(1.745325f, 2.5f, 2.0533f);
-            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);
+            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);*/
             txt1.text = sentences[index];
             txt2.text = sentences[index + 1];
             labels.gameObject.SetActive(true);
         }
         if (index == 10)
         {
-            txt1.rectTransform.sizeDelta = new Vector2(160f, 63.3f);
+            /*txt1.rectTransform.sizeDelta = new Vector2(160f, 63.3f);
             txt2.rectTransform.sizeDelta = new Vector2(160f, 55.7f);
             txt1.transform.localScale = new Vector3(1.745325f, 2.23f, 2.0533f);
-            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);
+            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);*/
             txt1.text = sentences[index];
             txt2.text = sentences[index + 1];
         }
         if (index == 12)
         {
-            txt1.rectTransform.sizeDelta = new Vector2(160f, 63.3f);
+            /*txt1.rectTransform.sizeDelta = new Vector2(160f, 63.3f);
             txt2.rectTransform.sizeDelta = new Vector2(160f, 55.7f);
             txt1.transform.localScale = new Vector3(1.745325f, 2.23f, 2.0533f);
-            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);
+            txt2.transform.localScale = new Vector3(1.6f, 3.4f, 2.0533f);*/
             txt1.text = sentences[index];
             txt2.text = sentences[index + 1];
             GM.number.text = 80 + "";
         }
         if (index == 14)
         {
-            txt1.rectTransform.sizeDelta = new Vector2(160f, 63.3f);
+            /*txt1.rectTransform.sizeDelta = new Vector2(160f, 63.3f);
             txt2.rectTransform.sizeDelta = new Vector2(160f, 55.7f);
             txt1.transform.localScale = new Vector3(1.745325f, 2.23f, 2.0533f);
-            txt2.transform.localScale = new Vector3(1.6f, 2.1f, 2.0533f);
+            txt2.transform.localScale = new Vector3(1.6f, 2.1f, 2.0533f);*/
             txt1.text = sentences[index];
             txt2.text = sentences[index + 1];
-            GM.lambs[1].GetComponent<test>().turn_on();
-            GM.lambs[2].GetComponent<test>().turn_on();
+            GM.lambs[4].GetComponent<test>().turn_on();
+            //GM.lambs[2].GetComponent<test>().turn_on();
             GM.lambs[6].GetComponent<test>().turn_on();
             GM.illumination.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.4353f);
         }
         if (index == 16)
         {
 
-            GM.lambs[1].GetComponent<test>().turn_of();
-            GM.lambs[2].GetComponent<test>().turn_of();
+            GM.lambs[4].GetComponent<test>().turn_of();
+            //GM.lambs[2].GetComponent<test>().turn_of();
             GM.lambs[6].GetComponent<test>().turn_of();
             GM.illumination.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
             labels.gameObject.SetActive(false);
