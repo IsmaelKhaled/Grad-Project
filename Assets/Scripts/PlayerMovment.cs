@@ -8,15 +8,14 @@ public class PlayerMovment : MonoBehaviour
 {
     Vector3 destinationPosition;
     NavMeshAgent agent;
-
-    //void OnCollisionEnter(Collision other)
-    //{
-    //    var otherXDD = other.gameObject.GetComponent<Interactable>();
-    //    if (otherXDD)
-    //    {
-    //        otherXDD.interact();
-    //    }
-    //}
+    void OnCollisionEnter(Collision other)
+    {
+        var otherXDD = other.gameObject.GetComponent<Interactable>();
+        if (otherXDD)
+        {
+            otherXDD.interact();
+        }
+    }
     public void OnGroundClick(BaseEventData data)
     {
         
@@ -32,15 +31,5 @@ public class PlayerMovment : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        //if (PlayerPrefs.GetInt("Saved") == 1)
-        {
-            float x = PlayerPrefs.GetFloat("p_x");
-            float y = PlayerPrefs.GetFloat("p_y");
-            float z = PlayerPrefs.GetFloat("p_z");
-            transform.position = new Vector3(x, y, z);
-            destinationPosition = new Vector3(x, y, z);
-            agent.SetDestination(destinationPosition);
-            Debug.Log("Position set to: " +  transform.localPosition);
-        }
     }
 }
