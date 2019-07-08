@@ -7,7 +7,7 @@ public class NpcWalking : MonoBehaviour
 {
     public GameObject source;
     public GameObject dest;
-
+    public float MinToDestroy = 5f;
     NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
@@ -29,6 +29,6 @@ public class NpcWalking : MonoBehaviour
             NPCSpawner.SpawnedNpcCount--;
             Destroy(gameObject);
         }
-        Destroy(gameObject, 5 * 60);
+        Destroy(gameObject, MinToDestroy * 60);
     }
 }
