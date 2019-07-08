@@ -12415,7 +12415,7 @@ MonoBehaviour:
   - {fileID: 1061163064}
   - {fileID: 2051005915}
   - {fileID: 137332296}
-  MaxSpawnedNpc: 50
+  MaxSpawnedNpc: 25
   SpawnRate: 0.2
 --- !u!4 &212710003
 Transform:
