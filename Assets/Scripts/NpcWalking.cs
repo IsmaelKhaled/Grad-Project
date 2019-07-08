@@ -29,5 +29,6 @@ public class NpcWalking : MonoBehaviour
             NPCSpawner.SpawnedNpcCount--;
             Destroy(gameObject);
         }
+        Destroy(gameObject, 5 * 60);
     }
 }
