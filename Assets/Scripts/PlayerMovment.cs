@@ -31,5 +31,12 @@ public class PlayerMovment : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        float x = PlayerPrefs.GetFloat("p_x");
+        float y = PlayerPrefs.GetFloat("p_y");
+        float z = PlayerPrefs.GetFloat("p_z");
+        transform.position = new Vector3(x, y, z);
+        destinationPosition = new Vector3(x, y, z);
+        agent.SetDestination(destinationPosition);
+        Debug.Log("Position set to: " + transform.localPosition);
     }
 }

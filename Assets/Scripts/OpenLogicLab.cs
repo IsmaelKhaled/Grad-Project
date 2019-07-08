@@ -24,7 +24,9 @@ public class OpenLogicLab : MonoBehaviour
     }
 
     private void OnMouseDown()
-    {   if (gameObject.tag == "Logic Lab")
+    {
+        position_save();
+        if (gameObject.tag == "Logic Lab")
         {
             SceneManager.LoadScene("Logic Gates 0");
         }
