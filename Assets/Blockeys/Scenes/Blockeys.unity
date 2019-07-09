@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2739,6 +2739,10 @@ MonoBehaviour:
   Neck: {fileID: 0}
   targetObj: {fileID: 0}
   target: {fileID: 0}
+  MessageLeft: {fileID: 0}
+  MessageRight: {fileID: 0}
+  MessageUp: {fileID: 0}
+  MessageDown: {fileID: 0}
   submit: {fileID: 479397211}
   cancel: {fileID: 1212089816}
   input: {fileID: 600539750}
@@ -5751,7 +5755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &953013670
 Transform:
   m_ObjectHideFlags: 0
@@ -5760,8 +5764,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953013669}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.02, y: 1.01, z: 0}
-  m_LocalScale: {x: 0.6614285, y: 0.7657143, z: 0}
+  m_LocalPosition: {x: 2.034, y: 0.996, z: 0}
+  m_LocalScale: {x: 0.65481424, y: 0.7741372, z: 0}
   m_Children: []
   m_Father: {fileID: 7759644533258705685}
   m_RootOrder: 0
@@ -6321,7 +6325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1001944064
 Transform:
   m_ObjectHideFlags: 0
@@ -6330,8 +6334,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001944063}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.73, y: 1.19, z: 0}
-  m_LocalScale: {x: 0.6192123, y: 0.73836565, z: 0}
+  m_LocalPosition: {x: 2.05, y: 1.017, z: 0}
+  m_LocalScale: {x: 0.65756017, y: 0.8043808, z: 0}
   m_Children: []
   m_Father: {fileID: 7759644533258705685}
   m_RootOrder: 1
@@ -6828,7 +6832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1029955356
 Transform:
   m_ObjectHideFlags: 0
@@ -6837,11 +6841,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029955355}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.829, y: -2.42, z: 0}
+  m_LocalPosition: {x: 1.78, y: -2.39, z: 0}
   m_LocalScale: {x: 0.6441428, y: 0.78749996, z: 0}
   m_Children: []
   m_Father: {fileID: 7759644533258705685}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1029955357
 SpriteRenderer:
@@ -12443,12 +12447,12 @@ GameObject:
   - component: {fileID: 2133479527}
   - component: {fileID: 2133479528}
   m_Layer: 0
-  m_Name: UP
+  m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2133479527
 Transform:
   m_ObjectHideFlags: 0
@@ -12457,11 +12461,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133479526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.747, y: -2.314, z: 0}
-  m_LocalScale: {x: 0.57906425, y: 0.67249995, z: 0}
+  m_LocalPosition: {x: 1.776, y: -2.285, z: 0}
+  m_LocalScale: {x: 0.6302054, y: 0.7222879, z: 0}
   m_Children: []
   m_Father: {fileID: 7759644533258705685}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2133479528
 SpriteRenderer:
@@ -12689,6 +12693,10 @@ MonoBehaviour:
   Neck: {fileID: 0}
   targetObj: {fileID: 0}
   target: {fileID: 0}
+  MessageLeft: {fileID: 0}
+  MessageRight: {fileID: 0}
+  MessageUp: {fileID: 0}
+  MessageDown: {fileID: 0}
   submit: {fileID: 479397211}
   cancel: {fileID: 1212089816}
   input: {fileID: 600539750}
@@ -13286,8 +13294,8 @@ Transform:
   m_Children:
   - {fileID: 953013670}
   - {fileID: 1001944064}
-  - {fileID: 2133479527}
   - {fileID: 1029955356}
+  - {fileID: 2133479527}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

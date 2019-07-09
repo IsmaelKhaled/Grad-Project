@@ -45,6 +45,7 @@ public class BlocksConnect : MonoBehaviour
     public GameObject MainBlock;
     public GameObject Bottom    ;
     public GameObject Neck, targetObj, target;
+    public GameObject MessageLeft,MessageRight,MessageUp,MessageDown;
 
 
     public Button submit, cancel;
@@ -68,6 +69,10 @@ public class BlocksConnect : MonoBehaviour
     {
         thePlayer = GameObject.Find("CharaRef_13");
         rb = thePlayer.GetComponent<Rigidbody2D>();
+        MessageUp=thePlayer.transform.Find("Up").gameObject;
+        MessageDown=thePlayer.transform.Find("Down").gameObject;
+        MessageRight=thePlayer.transform.Find("Right").gameObject;
+        MessageLeft=thePlayer.transform.Find("Left").gameObject;
         BlockCounter = 0;
         ParentBlock.myBlock = gameObject;
        // DirectChild.myBlock = gameObject;
@@ -461,25 +466,35 @@ public class BlocksConnect : MonoBehaviour
     }
     public  void MoveLeft()
     {
-        if ((rb.transform.position.x + tempVect.x) < -7.94f)
+        if ((rb.transform.position.x + tempVect.x) > -7.94f)
         {
-
+        	MessageLeft.SetActive(false);
+        	MessageRight.SetActive(false);
             tempVect = new Vector3(-1, 0, 0);
-
-
             tempVect = tempVect.normalized * speed * Time.deltaTime / 2.9f;
             rb.MovePosition(rb.transform.position + tempVect);
         }   // Can add more complicated logic here}
+        else
+        {
+        	MessageLeft.SetActive(true);
+        	MessageRight.SetActive(false);
+        }
     }
     public void MoveRight()
     {
         // Can add more complicated logic here
         
-            
+            MessageRight.SetActive(false);
+            MessageLeft.SetActive(false);
             if((rb.transform.position.x + tempVect.x) < -1.2f){
             tempVect = new Vector3(1, 0, 0);
             tempVect = tempVect.normalized * speed * Time.deltaTime / 3;
             rb.MovePosition(rb.transform.position + tempVect);
+        }
+        else
+        {
+        	MessageLeft.SetActive(false);
+        	MessageRight.SetActive(true);
         }
     }
     public  void MoveUp()
@@ -487,22 +502,35 @@ public class BlocksConnect : MonoBehaviour
 
         if ((rb.transform.position.y + tempVect.y) < 3.78f)
         {
-
+        	MessageUp.SetActive(false);
+        	MessageDown.SetActive(false);
             tempVect = new Vector3(0, 1, 0);
 
             tempVect = tempVect.normalized * speed * Time.deltaTime / 2.9f;
             rb.MovePosition(rb.transform.position + tempVect);
+        }
+        else
+        {
+        	MessageDown.SetActive(false);
+        	MessageUp.SetActive(true);
         }
     }
     public void MoveDown()
     {
         if ((rb.transform.position.y + tempVect.y) > -1.2f)
         {
+        	MessageDown.SetActive(false);
+        	MessageUp.SetActive(false);
 
             tempVect = new Vector3(0, -1, 0);
 
             tempVect = tempVect.normalized * speed * Time.deltaTime / 3;
             rb.MovePosition(rb.transform.position + tempVect);
+        }
+         else
+        {
+        	MessageDown.SetActive(true);
+        	MessageUp.SetActive(false);
         }
     }
     void IncreaseBy(ref int Target, int Amount)
