@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Blockeys/Scenes/Blockeys.unity
     guid: 45e450ff1e7b36149926b1b49050d4b7
+  - enabled: 1
+    path: Assets/binary numbers/Assets/Scenes/BinaryGame.unity
+    guid: 1118a474a5fd32d478d6cab2c9811ce4
   m_configObjects: {}

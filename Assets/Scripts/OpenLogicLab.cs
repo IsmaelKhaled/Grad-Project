@@ -40,7 +40,7 @@ public class OpenLogicLab : MonoBehaviour
         }
         else if (gameObject.tag =="Binary Lab")
         {   
-            SceneManager.LoadScene("Blockeys");
+            SceneManager.LoadScene("BinaryGame");
         }
     }
 }
