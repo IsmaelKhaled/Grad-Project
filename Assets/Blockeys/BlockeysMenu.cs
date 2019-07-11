@@ -10,10 +10,14 @@ public class BlockeysMenu : MonoBehaviour
     public string kingDir="none",PlayerDir="none",HorseManDir="none";
     public bool Animate =true;
     float Factor=2.0f;
+
+    public Texture2D cursor;
+    public Vector2 hotSpot = Vector2.zero;
     // Start is called before the first frame update
     void Start()
     {
-    	
+        Cursor.SetCursor(cursor, hotSpot, CursorMode.ForceSoftware);
+
     }
 
     // Update is called once per frame
