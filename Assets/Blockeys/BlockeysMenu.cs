@@ -17,7 +17,9 @@ public class BlockeysMenu : MonoBehaviour
     void Start()
     {
         Cursor.SetCursor(cursor, hotSpot, CursorMode.ForceSoftware);
-
+        Debug.Log(Screen.width/ 1000f);
+        Factor = Screen.width / 1000f;
+        
     }
 
     // Update is called once per frame
@@ -54,7 +56,7 @@ public class BlockeysMenu : MonoBehaviour
     }
     void MoveRight(GameObject Target, ref string Direction)
     {
-    	if(Target.transform.position.x+Factor<1500)
+    	if(Target.transform.position.x+Factor<Screen.width+500)
     	{
     		Target.transform.position=new Vector3(Target.transform.position.x+Factor,Target.transform.position.y,Target.transform.position.z);
     	}
@@ -100,7 +102,7 @@ public class BlockeysMenu : MonoBehaviour
     	while(i<10)
     	{
 	    	x = UnityEngine.Random.Range(0,7);
-	    	if(Target.transform.position.y+(20*x)<525)
+	    	if(Target.transform.position.y+(20*x)<Screen.height+50)
 	    	{
 	    		Target.transform.position=new Vector3(Target.transform.position.x,Target.transform.position.y+(20*x),Target.transform.position.z);
 	    		i=30;
