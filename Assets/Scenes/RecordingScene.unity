@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -57,7 +57,7 @@ LightmapSettings:
     serializedVersion: 10
     m_Resolution: 2
     m_BakeResolution: 10
-    m_AtlasSize: 512
+    m_AtlasSize: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 90d07d08e5cb52f45a24e191fccdc7a9,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -781,7 +782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &108854474
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1046,6 +1047,10 @@ PrefabInstance:
     - target: {fileID: 1178491778958390, guid: 151130aadffdc454599164c988062a23, type: 3}
       propertyPath: m_Name
       value: Femalenpc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178491778958390, guid: 151130aadffdc454599164c988062a23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4221327425813388, guid: 151130aadffdc454599164c988062a23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13829,7 +13834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &212710002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13927,6 +13932,10 @@ PrefabInstance:
     - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_Name
       value: NPCmale (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317579453426600, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14527,6 +14536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FemaleTA
       objectReference: {fileID: 0}
+    - target: {fileID: 1788965528169292, guid: f4c21e744c5dfc643942d98edc18d2f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4324544787825786, guid: f4c21e744c5dfc643942d98edc18d2f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.372917
@@ -14637,6 +14650,10 @@ PrefabInstance:
     - target: {fileID: 1497256792800886, guid: 18bf69742a682db458ca301e0ca15db9, type: 3}
       propertyPath: m_Name
       value: MaleAssist
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497256792800886, guid: 18bf69742a682db458ca301e0ca15db9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4205955331367420, guid: 18bf69742a682db458ca301e0ca15db9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14832,6 +14849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCfemale (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1258647135856062, guid: 462827485d51cae438064237ca0bb880, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4279033435022172, guid: 462827485d51cae438064237ca0bb880, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.9
@@ -14903,6 +14924,10 @@ PrefabInstance:
     - target: {fileID: 1467985330437428, guid: d8478ba537faad246a432d81e7a08f93, type: 3}
       propertyPath: m_Name
       value: MaleTA
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467985330437428, guid: d8478ba537faad246a432d81e7a08f93, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4652205123146838, guid: d8478ba537faad246a432d81e7a08f93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15136,7 +15161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &534669903
 AudioListener:
   m_ObjectHideFlags: 0
@@ -15495,6 +15520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCmale (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4317579453426600, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.02
@@ -15566,6 +15595,10 @@ PrefabInstance:
     - target: {fileID: 1482401127831050, guid: 3c6424c38ce232e48b15f91cf86ccee5, type: 3}
       propertyPath: m_Name
       value: MaleTA1NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482401127831050, guid: 3c6424c38ce232e48b15f91cf86ccee5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4847578698731442, guid: 3c6424c38ce232e48b15f91cf86ccee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15669,6 +15702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FemaleAssist
       objectReference: {fileID: 0}
+    - target: {fileID: 1950159766638242, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4135376327612862, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.388972
@@ -15768,6 +15805,10 @@ PrefabInstance:
     - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_Name
       value: NPCmale
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317579453426600, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16214,6 +16255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MaleAssist
       objectReference: {fileID: 0}
+    - target: {fileID: 1497256792800886, guid: 18bf69742a682db458ca301e0ca15db9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4205955331367420, guid: 18bf69742a682db458ca301e0ca15db9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.672
@@ -16405,6 +16450,10 @@ PrefabInstance:
     - target: {fileID: 1950159766638242, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
       propertyPath: m_Name
       value: FemaleAssist (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950159766638242, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4135376327612862, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16614,6 +16663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCfemale
       objectReference: {fileID: 0}
+    - target: {fileID: 1258647135856062, guid: 462827485d51cae438064237ca0bb880, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4279033435022172, guid: 462827485d51cae438064237ca0bb880, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.145483
@@ -16813,6 +16866,10 @@ PrefabInstance:
     - target: {fileID: 1497256792800886, guid: 18bf69742a682db458ca301e0ca15db9, type: 3}
       propertyPath: m_Name
       value: MaleAssist2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497256792800886, guid: 18bf69742a682db458ca301e0ca15db9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4205955331367420, guid: 18bf69742a682db458ca301e0ca15db9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17087,6 +17144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCfemale
       objectReference: {fileID: 0}
+    - target: {fileID: 1258647135856062, guid: 462827485d51cae438064237ca0bb880, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4279033435022172, guid: 462827485d51cae438064237ca0bb880, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.718
@@ -17212,6 +17273,88 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300020, guid: b4165fe278796ac46954f41edbb83198, type: 3}
+--- !u!1 &1078469036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078469039}
+  - component: {fileID: 1078469038}
+  - component: {fileID: 1078469037}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1078469037
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078469036}
+  m_Enabled: 1
+--- !u!20 &1078469038
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078469036}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1078469039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078469036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 55, y: 0.1, z: -11.08037}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1081684641
 GameObject:
   m_ObjectHideFlags: 0
@@ -17426,6 +17569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FemaleTA1
       objectReference: {fileID: 0}
+    - target: {fileID: 1178491778958390, guid: 151130aadffdc454599164c988062a23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4221327425813388, guid: 151130aadffdc454599164c988062a23, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.875
@@ -17542,6 +17689,10 @@ PrefabInstance:
     - target: {fileID: 1950159766638242, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
       propertyPath: m_Name
       value: FemaleAssist
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950159766638242, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4135376327612862, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17827,6 +17978,10 @@ PrefabInstance:
     - target: {fileID: 1258647135856062, guid: 462827485d51cae438064237ca0bb880, type: 3}
       propertyPath: m_Name
       value: NPCfemale
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258647135856062, guid: 462827485d51cae438064237ca0bb880, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4279033435022172, guid: 462827485d51cae438064237ca0bb880, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30031,7 +30186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1383343289282592, guid: 3662be179d8d66c41996964487fe2e9a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1383343289282592, guid: 3662be179d8d66c41996964487fe2e9a, type: 3}
       propertyPath: m_TagString
@@ -30174,6 +30329,10 @@ PrefabInstance:
     - target: {fileID: 1482401127831050, guid: 3c6424c38ce232e48b15f91cf86ccee5, type: 3}
       propertyPath: m_Name
       value: MaleTA1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482401127831050, guid: 3c6424c38ce232e48b15f91cf86ccee5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4847578698731442, guid: 3c6424c38ce232e48b15f91cf86ccee5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30338,6 +30497,10 @@ PrefabInstance:
     - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_Name
       value: NPCmale (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317579453426600, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38428,6 +38591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FemaleAssist
       objectReference: {fileID: 0}
+    - target: {fileID: 1950159766638242, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4135376327612862, guid: 1b6cb77ebeb41254e907977c4d1c4aa1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.148946
@@ -38489,6 +38656,10 @@ PrefabInstance:
     - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_Name
       value: NPCmale (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317579453426600, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52669,6 +52840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCfemale
       objectReference: {fileID: 0}
+    - target: {fileID: 1258647135856062, guid: 462827485d51cae438064237ca0bb880, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4279033435022172, guid: 462827485d51cae438064237ca0bb880, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.7097523
@@ -52812,6 +52987,10 @@ PrefabInstance:
     - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_Name
       value: NPCmale (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927450850424472, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317579453426600, guid: e1466b45455788d4bb76f792e1d6867a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -76113,6 +76292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dialogueManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911931122057679866, guid: 821c321441199614192fdb627b0ee43c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7908562258164261542, guid: 821c321441199614192fdb627b0ee43c,
         type: 3}
