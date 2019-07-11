@@ -17,8 +17,8 @@ public class BlockeysMenu : MonoBehaviour
     void Start()
     {
         Cursor.SetCursor(cursor, hotSpot, CursorMode.ForceSoftware);
-        Debug.Log(Screen.width/ 1000f);
-        Factor = Screen.width / 1000f;
+        /*Debug.Log(Screen.width/ 1000f);
+        Factor = Screen.width / 1000f;*/
         
     }
 
