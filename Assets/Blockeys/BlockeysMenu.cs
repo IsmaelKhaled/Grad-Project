@@ -38,32 +38,52 @@ public class BlockeysMenu : MonoBehaviour
     }
     void MoveObject(GameObject Target,ref string Direction)
     {
-    	if(Direction=="Right"){MoveRight(Target,ref Direction);}
-    	else if(Direction=="Left"){MoveLeft(Target,ref Direction);}
+    	if(Direction=="Right")
+    	{
+    		Target.transform.rotation= Quaternion.Euler(0,180,0);
+			MoveRight(Target,ref Direction);
+		}
+    	else if(Direction=="Left")
+    	{
+    		Target.transform.rotation= Quaternion.Euler(0,0,0);
+    		MoveLeft(Target,ref Direction);
+    	}
     	else
     	{
 	    	int x =UnityEngine.Random.Range(0,10)%2;
 	    	switch(x)
 	    	{
 	    		case 0:
-	    			if(Direction!="Left"){MoveRight(Target,ref Direction);Direction="Right";}
+	    			if(Direction!="Left")
+	    			{
+	    				Target.transform.rotation= Quaternion.Euler(0,0,0);
+						MoveRight(Target,ref Direction);
+						Direction="Right";
+					}
 	    			return;
 	    		case 1:
-	    			if(Direction!="Right"){MoveLeft(Target,ref Direction);Direction="Left";}
+	    			if(Direction!="Right")
+	    			{
+	    				Target.transform.rotation= Quaternion.Euler(0,180,0);
+	    				MoveLeft(Target,ref Direction);
+	    				Direction="Left";
+	    			}
 	    			return;
 	    	}
     	}
     }
     void MoveRight(GameObject Target, ref string Direction)
     {
-    	if(Target.transform.position.x+Factor<Screen.width+500)
+    	if(Target.transform.position.x+Factor<Screen.width+200)
     	{
+    		Target.transform.rotation= Quaternion.Euler(0,180,0);
     		Target.transform.position=new Vector3(Target.transform.position.x+Factor,Target.transform.position.y,Target.transform.position.z);
     	}
     	else
     	{
     		Direction="none";
     		int x =UnityEngine.Random.Range(0,1000)%2;
+    		randomSpawn(Target);
 	    	switch(x)
 	    	{
 	    		case 0:
@@ -85,6 +105,7 @@ public class BlockeysMenu : MonoBehaviour
     	{
     		Direction="none";
     		int x =UnityEngine.Random.Range(0,1000)%2;
+	    	randomSpawn(Target);
 	    	switch(x)
 	    	{
 	    		case 0:
@@ -101,11 +122,11 @@ public class BlockeysMenu : MonoBehaviour
     	int x=0,i=0;
     	while(i<10)
     	{
-	    	x = UnityEngine.Random.Range(0,7);
-	    	if(Target.transform.position.y+(20*x)<Screen.height+50)
+	    	x = UnityEngine.Random.Range(0,50);
+	    	if(Target.transform.position.y+(20*x)<Screen.height-50)
 	    	{
 	    		Target.transform.position=new Vector3(Target.transform.position.x,Target.transform.position.y+(20*x),Target.transform.position.z);
-	    		i=30;
+	    		i=10;
 	    	}
 	    	i+=1;
     	}
@@ -115,17 +136,29 @@ public class BlockeysMenu : MonoBehaviour
     	int x=0,i=0;
     	while(i<10)
     	{
-	    	x = UnityEngine.Random.Range(0,7);
+	    	x = UnityEngine.Random.Range(0,50);
 	    	if(Target.transform.position.y-(20*x)>50)
 	    	{
 	    		Target.transform.position=new Vector3(Target.transform.position.x,Target.transform.position.y-(20*x),Target.transform.position.z);
-	    		i=30;
+	    		i=10;
 	    	}
 	    	i+=1;
     	}
     }
 
-
+	void randomSpawn(GameObject Target)
+    {
+    int x =UnityEngine.Random.Range(0,10)%2;
+	    switch(x)
+		    {
+		    case 0:
+		    	Target.transform.position=new Vector3(1500,Target.transform.position.y,Target.transform.position.z);
+		    	return;
+		    case 1:
+		    	Target.transform.position=new Vector3(-200,Target.transform.position.y,Target.transform.position.z);
+		    	return;
+		    }
+    }
 
     void ExitTask()
     {
